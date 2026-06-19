@@ -17,10 +17,8 @@
       --verde-600:#287c68;
       --verde-100:#e5f3ef;
       --arena-50:#faf9f6;
-      --arena-100:#f2efe8;
       --tinta:#202c35;
       --texto-suave:#5b6871;
-      --blanco:#ffffff;
       --borde:#d7e0e5;
       --sombra:0 16px 40px rgba(23,50,77,.09);
       --radio:18px;
@@ -109,20 +107,16 @@
       flex-shrink:0;
     }
 
-    .enlaces-cabecera{
-      display:flex;
-      flex-wrap:wrap;
-      gap:10px;
-      justify-content:flex-end;
-    }
-
     .enlace-cabecera{
-      padding:9px 14px;
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      padding:10px 18px;
       color:#fff;
       border:1px solid rgba(255,255,255,.45);
       border-radius:999px;
       font-size:.94rem;
-      font-weight:700;
+      font-weight:800;
       text-decoration:none;
       background:rgba(255,255,255,.06);
     }
@@ -205,31 +199,6 @@
       margin:20px 0 0;
       color:#e7f1f3;
       font-size:clamp(1rem,1.7vw,1.18rem);
-    }
-
-    .acciones-portada{
-      display:flex;
-      flex-wrap:wrap;
-      gap:12px;
-      margin-top:26px;
-    }
-
-    .boton-portada{
-      display:inline-flex;
-      align-items:center;
-      justify-content:center;
-      padding:12px 16px;
-      color:var(--azul-900);
-      background:#fff;
-      border-radius:999px;
-      font-weight:850;
-      text-decoration:none;
-    }
-
-    .boton-portada.secundario{
-      color:#fff;
-      background:rgba(255,255,255,.1);
-      border:1px solid rgba(255,255,255,.45);
     }
 
     main{
@@ -456,8 +425,6 @@
         flex-direction:column;
       }
 
-      .enlaces-cabecera{justify-content:flex-start}
-
       .bloque-institucional{
         align-items:flex-start;
         flex-direction:column;
@@ -497,18 +464,12 @@
 
   <header class="cabecera" id="inicio">
     <nav class="navegacion" aria-label="Navegación principal">
-      <a class="marca" href="https://crebeucayali.weebly.com/" aria-label="Ir a Crebe Ucayali">
+      <a class="marca" href="index.html" aria-label="Accesos Complementarios">
         <span class="marca-icono" aria-hidden="true">AC</span>
         <span>Accesos Complementarios</span>
       </a>
 
-      <div class="enlaces-cabecera">
-        <a class="enlace-cabecera" href="https://crebeucayali.weebly.com/">Inicio</a>
-        <a class="enlace-cabecera" href="#contenido-principal">Accesos</a>
-        <a class="enlace-cabecera" href="directorio-institucional.html">Directorio</a>
-        <a class="enlace-cabecera" href="repositorios.html">Repositorios</a>
-        <a class="enlace-cabecera" href="contacto.html">Contacto</a>
-      </div>
+      <a class="enlace-cabecera" href="https://crebeucayali.weebly.com/">Regresar al inicio</a>
     </nav>
 
     <div class="portada">
