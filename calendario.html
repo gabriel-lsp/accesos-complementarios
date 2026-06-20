@@ -17,8 +17,6 @@
       --verde-700:#1f6a5a;
       --verde-600:#287c68;
       --verde-100:#e5f3ef;
-      --rojo:#b42318;
-      --rojo-100:#fde8e7;
       --arena-50:#faf9f6;
       --tinta:#202c35;
       --texto-suave:#5b6871;
@@ -289,31 +287,36 @@
 
     .calendario-mes th,
     .calendario-mes td{
-      width:14.28%;
-      height:54px;
-      padding:10px;
+      width:20%;
+      height:62px;
       border:1px solid var(--borde);
-      text-align:center;
-      vertical-align:middle;
+      text-align:left;
+      vertical-align:top;
     }
 
     .calendario-mes th{
+      padding:10px;
       color:var(--azul-900);
       background:rgba(232,241,245,.72);
       font-size:.86rem;
       font-weight:900;
+      text-align:center;
     }
 
     .calendario-mes td{
+      position:relative;
+      padding:8px;
       color:var(--azul-900);
       background:rgba(255,255,255,.78);
-      font-size:.98rem;
-      font-weight:800;
+      font-size:.74rem;
+      font-weight:850;
     }
 
-    .calendario-mes .fin-semana{
-      color:var(--rojo);
-      background:var(--rojo-100);
+    .calendario-mes td span{
+      position:absolute;
+      top:7px;
+      left:8px;
+      line-height:1;
     }
 
     .calendario-mes .vacio{
@@ -466,9 +469,13 @@
       .tabla-calendario td{padding:12px 10px}
       .calendario-mes th,
       .calendario-mes td{
-        height:44px;
-        padding:8px 4px;
-        font-size:.86rem;
+        height:48px;
+        padding:6px;
+        font-size:.68rem;
+      }
+      .calendario-mes td span{
+        top:6px;
+        left:6px;
       }
     }
   </style>
@@ -511,7 +518,7 @@
         <div>
           <p class="seccion-etiqueta">Mayo a diciembre</p>
           <h2 id="titulo-calendario">Programación anual de actividades</h2>
-          <p class="descripcion-panel">La programación inicia en mayo y se extiende hasta diciembre. Mayo y junio muestran el calendario completo del mes, con sábados y domingos marcados en rojo para facilitar la lectura.</p>
+          <p class="descripcion-panel">La programación inicia en mayo y se extiende hasta diciembre. Mayo y junio muestran el calendario de lunes a viernes, dejando fuera sábados y domingos para una lectura más institucional.</p>
         </div>
       </div>
 
@@ -520,14 +527,14 @@
           <div class="mes-cabecera"><h3>Mayo 2026</h3></div>
           <table class="calendario-mes" aria-label="Calendario de mayo 2026">
             <thead>
-              <tr><th>Lun</th><th>Mar</th><th>Mié</th><th>Jue</th><th>Vie</th><th class="fin-semana">Sáb</th><th class="fin-semana">Dom</th></tr>
+              <tr><th>Lun</th><th>Mar</th><th>Mié</th><th>Jue</th><th>Vie</th></tr>
             </thead>
             <tbody>
-              <tr><td class="vacio">0</td><td class="vacio">0</td><td class="vacio">0</td><td class="vacio">0</td><td>1</td><td class="fin-semana">2</td><td class="fin-semana">3</td></tr>
-              <tr><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td><td class="fin-semana">9</td><td class="fin-semana">10</td></tr>
-              <tr><td>11</td><td>12</td><td>13</td><td>14</td><td>15</td><td class="fin-semana">16</td><td class="fin-semana">17</td></tr>
-              <tr><td>18</td><td>19</td><td>20</td><td>21</td><td>22</td><td class="fin-semana">23</td><td class="fin-semana">24</td></tr>
-              <tr><td>25</td><td>26</td><td>27</td><td>28</td><td>29</td><td class="fin-semana">30</td><td class="fin-semana">31</td></tr>
+              <tr><td class="vacio"><span>0</span></td><td class="vacio"><span>0</span></td><td class="vacio"><span>0</span></td><td class="vacio"><span>0</span></td><td><span>1</span></td></tr>
+              <tr><td><span>4</span></td><td><span>5</span></td><td><span>6</span></td><td><span>7</span></td><td><span>8</span></td></tr>
+              <tr><td><span>11</span></td><td><span>12</span></td><td><span>13</span></td><td><span>14</span></td><td><span>15</span></td></tr>
+              <tr><td><span>18</span></td><td><span>19</span></td><td><span>20</span></td><td><span>21</span></td><td><span>22</span></td></tr>
+              <tr><td><span>25</span></td><td><span>26</span></td><td><span>27</span></td><td><span>28</span></td><td><span>29</span></td></tr>
             </tbody>
           </table>
         </article>
@@ -536,14 +543,14 @@
           <div class="mes-cabecera"><h3>Junio 2026</h3></div>
           <table class="calendario-mes" aria-label="Calendario de junio 2026">
             <thead>
-              <tr><th>Lun</th><th>Mar</th><th>Mié</th><th>Jue</th><th>Vie</th><th class="fin-semana">Sáb</th><th class="fin-semana">Dom</th></tr>
+              <tr><th>Lun</th><th>Mar</th><th>Mié</th><th>Jue</th><th>Vie</th></tr>
             </thead>
             <tbody>
-              <tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td class="fin-semana">6</td><td class="fin-semana">7</td></tr>
-              <tr><td>8</td><td>9</td><td>10</td><td>11</td><td>12</td><td class="fin-semana">13</td><td class="fin-semana">14</td></tr>
-              <tr><td>15</td><td>16</td><td>17</td><td>18</td><td>19</td><td class="fin-semana">20</td><td class="fin-semana">21</td></tr>
-              <tr><td>22</td><td>23</td><td>24</td><td>25</td><td>26</td><td class="fin-semana">27</td><td class="fin-semana">28</td></tr>
-              <tr><td>29</td><td>30</td><td class="vacio">0</td><td class="vacio">0</td><td class="vacio">0</td><td class="vacio fin-semana">0</td><td class="vacio fin-semana">0</td></tr>
+              <tr><td><span>1</span></td><td><span>2</span></td><td><span>3</span></td><td><span>4</span></td><td><span>5</span></td></tr>
+              <tr><td><span>8</span></td><td><span>9</span></td><td><span>10</span></td><td><span>11</span></td><td><span>12</span></td></tr>
+              <tr><td><span>15</span></td><td><span>16</span></td><td><span>17</span></td><td><span>18</span></td><td><span>19</span></td></tr>
+              <tr><td><span>22</span></td><td><span>23</span></td><td><span>24</span></td><td><span>25</span></td><td><span>26</span></td></tr>
+              <tr><td><span>29</span></td><td><span>30</span></td><td class="vacio"><span>0</span></td><td class="vacio"><span>0</span></td><td class="vacio"><span>0</span></td></tr>
             </tbody>
           </table>
         </article>
