@@ -5,455 +5,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Líneas de acción del CREBE según documentos oficiales del Minedu y su articulación con CREBE Ucayali.">
   <title>Líneas de acción | Accesos Complementarios</title>
-
   <style>
-    :root{
-      color-scheme:light;
-      --azul-900:#17324d;
-      --azul-800:#214664;
-      --azul-700:#2f5f7d;
-      --azul-100:#e8f1f5;
-      --verde-700:#1f6a5a;
-      --verde-600:#287c68;
-      --verde-100:#e5f3ef;
-      --arena-50:#faf9f6;
-      --arena-100:#f2efe8;
-      --tinta:#202c35;
-      --texto-suave:#5b6871;
-      --blanco:#ffffff;
-      --borde:#d7e0e5;
-      --sombra:0 16px 40px rgba(23,50,77,.09);
-      --radio:18px;
-      font-family:Inter,Arial,Helvetica,sans-serif;
-    }
-
-    *{box-sizing:border-box}
-
-    html{scroll-behavior:smooth}
-
-    body{
-      min-width:320px;
-      margin:0;
-      color:var(--tinta);
-      background:radial-gradient(circle at 90% 8%,#dcedea 0,transparent 24rem),var(--arena-50);
-      line-height:1.5;
-    }
-
-    a{color:inherit}
-
-    .salto-contenido{
-      position:fixed;
-      top:12px;
-      left:12px;
-      z-index:100;
-      padding:10px 14px;
-      color:#fff;
-      background:var(--azul-900);
-      border-radius:8px;
-      transform:translateY(-160%);
-      transition:transform .2s ease;
-    }
-
-    .salto-contenido:focus{transform:translateY(0)}
-
-    .cabecera{
-      position:relative;
-      overflow:hidden;
-      padding:22px clamp(20px,5vw,72px) 92px;
-      color:#fff;
-      background:linear-gradient(125deg,rgba(23,50,77,.97),rgba(31,106,90,.93)),var(--azul-900);
-    }
-
-    .cabecera:after{
-      position:absolute;
-      right:-80px;
-      bottom:-190px;
-      width:430px;
-      height:430px;
-      border:70px solid rgba(255,255,255,.06);
-      border-radius:50%;
-      content:"";
-    }
-
-    .navegacion{
-      position:relative;
-      z-index:1;
-      display:flex;
-      align-items:center;
-      justify-content:space-between;
-      gap:18px;
-      max-width:1240px;
-      margin:0 auto;
-    }
-
-    .marca{
-      display:inline-flex;
-      gap:11px;
-      align-items:center;
-      color:#fff;
-      font-weight:800;
-      text-decoration:none;
-    }
-
-    .marca-icono{
-      display:grid;
-      width:43px;
-      height:43px;
-      place-items:center;
-      color:var(--azul-900);
-      background:#fff;
-      border-radius:12px;
-      font-size:.7rem;
-      font-weight:900;
-      letter-spacing:.04em;
-      flex-shrink:0;
-    }
-
-    .enlaces-cabecera{
-      display:flex;
-      flex-wrap:wrap;
-      gap:10px;
-      justify-content:flex-end;
-    }
-
-    .enlace-cabecera{
-      padding:9px 14px;
-      color:#fff;
-      border:1px solid rgba(255,255,255,.45);
-      border-radius:999px;
-      font-size:.94rem;
-      font-weight:700;
-      text-decoration:none;
-      background:rgba(255,255,255,.06);
-    }
-
-    .enlace-cabecera:hover{
-      color:var(--azul-900);
-      background:#fff;
-    }
-
-    .portada{
-      position:relative;
-      z-index:1;
-      max-width:1240px;
-      margin:52px auto 0;
-    }
-
-    .bloque-institucional{
-      display:flex;
-      align-items:center;
-      gap:1.25rem;
-      max-width:780px;
-      margin-bottom:1.8rem;
-    }
-
-    .logo-crebe{
-      display:block;
-      width:92px;
-      max-width:92px;
-      height:auto;
-      max-height:92px;
-      object-fit:contain;
-      flex-shrink:0;
-    }
-
-    .texto-institucional{
-      border-left:2px solid rgba(255,255,255,.35);
-      padding-left:1.25rem;
-    }
-
-    .nombre-institucional{
-      margin:0;
-      color:#fff;
-      font-size:clamp(1rem,1.6vw,1.35rem);
-      font-weight:800;
-      line-height:1.25;
-    }
-
-    .detalle-institucional{
-      margin:.35rem 0 0;
-      color:#fff;
-      font-size:clamp(.9rem,1.2vw,1.05rem);
-      font-weight:500;
-    }
-
-    .etiqueta-superior,
-    .seccion-etiqueta{
-      margin:0 0 10px;
-      color:#bde5da;
-      font-size:.79rem;
-      font-weight:900;
-      letter-spacing:.12em;
-      text-transform:uppercase;
-    }
-
-    .seccion-etiqueta{color:var(--verde-700)}
-
-    .portada h1{
-      max-width:860px;
-      margin:0;
-      color:#fff;
-      font-family:Georgia,"Times New Roman",serif;
-      font-size:clamp(2.35rem,5vw,4.2rem);
-      font-weight:600;
-      line-height:1.03;
-      letter-spacing:-.045em;
-    }
-
-    .subtitulo{
-      max-width:840px;
-      margin:20px 0 0;
-      color:#e7f1f3;
-      font-size:clamp(1rem,1.7vw,1.18rem);
-    }
-
-    main{
-      width:min(1240px,calc(100% - 40px));
-      margin:0 auto;
-    }
-
-    .panel-contenido{
-      position:relative;
-      z-index:2;
-      margin-top:-52px;
-      padding:clamp(22px,4vw,38px);
-      background:rgba(255,255,255,.98);
-      border:1px solid rgba(215,224,229,.9);
-      border-radius:var(--radio);
-      box-shadow:var(--sombra);
-    }
-
-    .encabezado-seccion h2{
-      max-width:900px;
-      margin:0;
-      color:var(--azul-900);
-      font-family:Georgia,"Times New Roman",serif;
-      font-size:clamp(1.8rem,3.4vw,2.8rem);
-      font-weight:600;
-      letter-spacing:-.04em;
-      line-height:1.05;
-    }
-
-    .texto-principal{
-      max-width:940px;
-      margin:16px 0 0;
-      color:var(--texto-suave);
-      font-size:1.04rem;
-      line-height:1.75;
-    }
-
-    .grid-lineas{
-      display:grid;
-      grid-template-columns:repeat(2,minmax(0,1fr));
-      gap:20px;
-      margin-top:30px;
-    }
-
-    .tarjeta-linea{
-      position:relative;
-      overflow:hidden;
-      padding:24px;
-      background:#fff;
-      border:1px solid var(--borde);
-      border-radius:var(--radio);
-      box-shadow:var(--sombra);
-    }
-
-    .tarjeta-linea:before{
-      position:absolute;
-      right:-42px;
-      top:-42px;
-      width:120px;
-      height:120px;
-      background:var(--verde-100);
-      border-radius:50%;
-      content:"";
-    }
-
-    .linea-numero{
-      position:relative;
-      z-index:1;
-      display:grid;
-      width:44px;
-      height:44px;
-      margin-bottom:16px;
-      place-items:center;
-      color:#fff;
-      background:var(--verde-700);
-      border-radius:13px;
-      font-weight:900;
-    }
-
-    .tarjeta-linea h3{
-      position:relative;
-      z-index:1;
-      margin:0 0 10px;
-      color:var(--azul-900);
-      font-family:Georgia,"Times New Roman",serif;
-      font-size:1.35rem;
-      line-height:1.2;
-    }
-
-    .tarjeta-linea p{
-      position:relative;
-      z-index:1;
-      margin:0;
-      color:var(--texto-suave);
-      line-height:1.7;
-    }
-
-    .franja-destacada{
-      margin-top:28px;
-      padding:22px;
-      color:var(--texto-suave);
-      background:var(--azul-100);
-      border:1px solid var(--borde);
-      border-radius:16px;
-      line-height:1.7;
-    }
-
-    .franja-destacada strong{
-      color:var(--azul-900);
-    }
-
-    .fuente-oficial{
-      margin-top:18px;
-      padding:18px;
-      color:var(--texto-suave);
-      background:var(--arena-100);
-      border:1px solid var(--borde);
-      border-radius:16px;
-      line-height:1.7;
-    }
-
-    .fuente-oficial a{
-      color:var(--verde-700);
-      font-weight:800;
-      text-decoration:underline;
-      text-underline-offset:3px;
-    }
-
-    footer{
-      margin-top:56px;
-      padding:44px clamp(20px,5vw,72px) 28px;
-      color:#dbe9ee;
-      background:var(--azul-900);
-    }
-
-    .footer-contenido{
-      display:grid;
-      grid-template-columns:1.2fr 1fr 1.25fr;
-      gap:32px;
-      max-width:1240px;
-      margin:0 auto;
-    }
-
-    .footer-bloque h2{
-      margin:0 0 10px;
-      color:#fff;
-      font-size:1rem;
-    }
-
-    .footer-bloque p{
-      margin:0;
-      color:#dbe9ee;
-      line-height:1.65;
-    }
-
-    .footer-bloque a{
-      color:#dbe9ee;
-      text-decoration:underline;
-      text-underline-offset:3px;
-    }
-
-    .footer-identidad{
-      display:flex;
-      gap:16px;
-      align-items:flex-start;
-    }
-
-    .logo-footer{
-      display:block;
-      width:72px;
-      max-width:72px;
-      height:auto;
-      max-height:72px;
-      object-fit:contain;
-      flex-shrink:0;
-    }
-
-    .footer-final{
-      max-width:1240px;
-      margin:28px auto 0;
-      padding-top:18px;
-      border-top:1px solid rgba(255,255,255,.18);
-    }
-
-    .footer-final p{
-      margin:0;
-      color:#dbe9ee;
-      font-size:.92rem;
-    }
-
-    @media(max-width:980px){
-      .grid-lineas{grid-template-columns:1fr}
-      .footer-contenido{grid-template-columns:1fr}
-      .footer-identidad{align-items:center}
-    }
-
-    @media(max-width:720px){
-      .cabecera{padding-bottom:72px}
-
-      .navegacion{
-        align-items:flex-start;
-        flex-direction:column;
-      }
-
-      .enlaces-cabecera{justify-content:flex-start}
-
-      .bloque-institucional{
-        align-items:flex-start;
-        flex-direction:column;
-      }
-
-      .texto-institucional{
-        padding-left:0;
-        border-left:0;
-      }
-
-      .logo-crebe{
-        width:76px;
-        max-width:76px;
-        max-height:76px;
-      }
-
-      main{width:min(100% - 28px,1240px)}
-
-      .footer-identidad{flex-direction:column}
-
-      .logo-footer{
-        width:60px;
-        max-width:60px;
-      }
-    }
+    :root{color-scheme:light;--azul-900:#17324d;--azul-800:#214664;--verde-700:#1f6a5a;--verde-100:#e5f3ef;--arena-50:#faf9f6;--arena-100:#f2efe8;--tinta:#202c35;--texto-suave:#5b6871;--blanco:#ffffff;--borde:#d7e0e5;--sombra:0 16px 40px rgba(23,50,77,.09);--radio:18px;font-family:Inter,Arial,Helvetica,sans-serif}*{box-sizing:border-box}html{scroll-behavior:smooth}body{min-width:320px;margin:0;color:var(--tinta);background:radial-gradient(circle at 90% 8%,#dcedea 0,transparent 24rem),var(--arena-50);line-height:1.5}a{color:inherit}.salto-contenido{position:fixed;top:12px;left:12px;z-index:100;padding:10px 14px;color:#fff;background:var(--azul-900);border-radius:8px;transform:translateY(-160%);transition:transform .2s ease}.salto-contenido:focus{transform:translateY(0)}.cabecera{position:relative;overflow:hidden;padding:22px clamp(20px,5vw,72px) 92px;color:#fff;background:linear-gradient(125deg,rgba(23,50,77,.97),rgba(31,106,90,.93)),var(--azul-900)}.cabecera:after{position:absolute;right:-80px;bottom:-190px;width:430px;height:430px;border:70px solid rgba(255,255,255,.06);border-radius:50%;content:""}.navegacion{position:relative;z-index:1;display:flex;align-items:center;justify-content:space-between;gap:18px;max-width:1240px;margin:0 auto}.marca{display:inline-flex;gap:11px;align-items:center;color:#fff;font-weight:800;text-decoration:none}.marca-icono{display:grid;width:43px;height:43px;place-items:center;color:var(--azul-900);background:#fff;border-radius:12px;font-size:.7rem;font-weight:900;letter-spacing:.04em;flex-shrink:0}.enlaces-cabecera{display:flex;flex-wrap:wrap;gap:10px;justify-content:flex-end}.enlace-cabecera{padding:9px 14px;color:#fff;border:1px solid rgba(255,255,255,.45);border-radius:999px;font-size:.94rem;font-weight:700;text-decoration:none;background:rgba(255,255,255,.06)}.enlace-cabecera:hover{color:var(--azul-900);background:#fff}.portada{position:relative;z-index:1;max-width:1240px;margin:52px auto 0}.bloque-institucional{display:flex;align-items:center;gap:1.25rem;max-width:780px;margin-bottom:1.8rem}.logo-crebe{display:block;width:92px;max-width:92px;height:auto;max-height:92px;object-fit:contain;flex-shrink:0}.texto-institucional{border-left:2px solid rgba(255,255,255,.35);padding-left:1.25rem}.nombre-institucional{margin:0;color:#fff;font-size:clamp(1rem,1.6vw,1.35rem);font-weight:800;line-height:1.25}.detalle-institucional{margin:.35rem 0 0;color:#fff;font-size:clamp(.9rem,1.2vw,1.05rem);font-weight:500}.etiqueta-superior,.seccion-etiqueta{margin:0 0 10px;color:#bde5da;font-size:.79rem;font-weight:900;letter-spacing:.12em;text-transform:uppercase}.seccion-etiqueta{color:var(--verde-700)}.portada h1{max-width:860px;margin:0;color:#fff;font-family:Georgia,"Times New Roman",serif;font-size:clamp(2.35rem,5vw,4.2rem);font-weight:600;line-height:1.03;letter-spacing:-.045em}.subtitulo{max-width:840px;margin:20px 0 0;color:#e7f1f3;font-size:clamp(1rem,1.7vw,1.18rem)}main{width:min(1240px,calc(100% - 40px));margin:0 auto}.panel-contenido{position:relative;z-index:2;margin-top:-52px;padding:clamp(22px,4vw,38px);background:rgba(255,255,255,.98);border:1px solid rgba(215,224,229,.9);border-radius:var(--radio);box-shadow:var(--sombra)}.encabezado-seccion h2{max-width:900px;margin:0;color:var(--azul-900);font-family:Georgia,"Times New Roman",serif;font-size:clamp(1.8rem,3.4vw,2.8rem);font-weight:600;letter-spacing:-.04em;line-height:1.05}.texto-principal{max-width:940px;margin:16px 0 0;color:var(--texto-suave);font-size:1.04rem;line-height:1.75}.grid-lineas{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px;margin-top:30px}.tarjeta-linea{position:relative;overflow:hidden;padding:24px;background:#fff;border:1px solid var(--borde);border-radius:var(--radio);box-shadow:var(--sombra)}.tarjeta-linea:before{position:absolute;right:-42px;top:-42px;width:120px;height:120px;background:var(--verde-100);border-radius:50%;content:""}.linea-numero{position:relative;z-index:1;display:grid;width:44px;height:44px;margin-bottom:16px;place-items:center;color:#fff;background:var(--verde-700);border-radius:13px;font-weight:900}.tarjeta-linea h3{position:relative;z-index:1;margin:0 0 10px;color:var(--azul-900);font-family:Georgia,"Times New Roman",serif;font-size:1.35rem;line-height:1.2}.tarjeta-linea p{position:relative;z-index:1;margin:0;color:var(--texto-suave);line-height:1.7}.franja-destacada{margin-top:28px;padding:22px;color:var(--texto-suave);background:#e8f1f5;border:1px solid var(--borde);border-radius:16px;line-height:1.7}.franja-destacada strong{color:var(--azul-900)}.fuente-oficial{margin-top:18px;padding:18px;color:var(--texto-suave);background:var(--arena-100);border:1px solid var(--borde);border-radius:16px;line-height:1.7}.fuente-oficial a{color:var(--verde-700);font-weight:800;text-decoration:underline;text-underline-offset:3px}footer{margin-top:56px;padding:44px clamp(20px,5vw,72px) 28px;color:#dbe9ee;background:var(--azul-900)}.footer-contenido{display:grid;grid-template-columns:1.2fr 1fr 1.25fr;gap:32px;max-width:1240px;margin:0 auto}.footer-bloque h2{margin:0 0 10px;color:#fff;font-size:1rem}.footer-bloque p{margin:0;color:#dbe9ee;line-height:1.65}.footer-bloque a{color:#dbe9ee;text-decoration:underline;text-underline-offset:3px}.footer-identidad{display:flex;gap:16px;align-items:flex-start}.logo-footer{display:block;width:72px;max-width:72px;height:auto;max-height:72px;object-fit:contain;flex-shrink:0}.footer-final{max-width:1240px;margin:28px auto 0;padding-top:18px;border-top:1px solid rgba(255,255,255,.18)}.footer-final p{margin:0;color:#dbe9ee;font-size:.92rem}@media(max-width:980px){.grid-lineas,.footer-contenido{grid-template-columns:1fr}.footer-identidad{align-items:center}}@media(max-width:720px){.cabecera{padding-bottom:72px}.navegacion{align-items:flex-start;flex-direction:column}.enlaces-cabecera{justify-content:flex-start}.bloque-institucional{align-items:flex-start;flex-direction:column}.texto-institucional{padding-left:0;border-left:0}.logo-crebe{width:76px;max-width:76px;max-height:76px}main{width:min(100% - 28px,1240px)}.footer-identidad{flex-direction:column}.logo-footer{width:60px;max-width:60px}}
   </style>
 </head>
-
 <body>
   <a class="salto-contenido" href="#contenido-principal">Ir al contenido</a>
-
   <header class="cabecera" id="inicio">
     <nav class="navegacion" aria-label="Navegación principal">
       <a class="marca" href="index.html" aria-label="Volver a Accesos Complementarios">
         <span class="marca-icono" aria-hidden="true">AC</span>
         <span>Accesos Complementarios</span>
       </a>
-
       <div class="enlaces-cabecera">
         <a class="enlace-cabecera" href="index.html">Inicio</a>
+        <a class="enlace-cabecera" href="contacto.html">Contacto</a>
       </div>
     </nav>
-
     <div class="portada">
       <div class="bloque-institucional" aria-label="Identidad institucional">
         <img class="logo-crebe" src="https://raw.githubusercontent.com/gabriel-lsp/banco-digital-lsp/main/logo-crebe.png" alt="Logo del CREBE Señor de los Milagros - Ucayali">
@@ -462,13 +30,11 @@
           <p class="detalle-institucional">Centro de Recursos de Educación Básica Especial</p>
         </div>
       </div>
-
       <p class="etiqueta-superior">Ejes oficiales de trabajo</p>
       <h1>Líneas de acción</h1>
       <p class="subtitulo">Las líneas de acción orientan las actividades del CREBE y permiten organizar el soporte educativo, la información, la capacitación, la sensibilización y los recursos para la atención a la diversidad.</p>
     </div>
   </header>
-
   <main id="contenido-principal">
     <section class="panel-contenido" aria-labelledby="titulo-lineas">
       <div class="encabezado-seccion">
@@ -476,79 +42,26 @@
         <h2 id="titulo-lineas">Cuatro líneas que orientan el trabajo del Centro de Recursos de Educación Básica Especial</h2>
         <p class="texto-principal">De acuerdo con la cartilla informativa del Ministerio de Educación, las líneas de acción permiten orientar las actividades que desarrolla una institución para cumplir determinados propósitos y responder a las problemáticas identificadas. En el caso de los CREBE, estas líneas se organizan en cuatro campos de trabajo vinculados con la inclusión educativa.</p>
       </div>
-
       <div class="grid-lineas">
-        <article class="tarjeta-linea">
-          <span class="linea-numero">1</span>
-          <h3>Información e investigación</h3>
-          <p>Esta línea se orienta a indagar y difundir información actualizada sobre la atención a la diversidad y las necesidades de estudiantes con discapacidad, talento o superdotación. Puede incluir diagnósticos, boletines, folletos, investigaciones breves, biblioteca, aula tecnológica accesible y actividades de extensión cultural.</p>
-        </article>
-
-        <article class="tarjeta-linea">
-          <span class="linea-numero">2</span>
-          <h3>Capacitación</h3>
-          <p>Comprende acciones dirigidas al fortalecimiento de capacidades de docentes y profesionales no docentes de instituciones y servicios educativos. Considera la identificación de necesidades formativas, la coordinación con DRE o UGEL y la difusión de las capacitaciones por los canales oficiales correspondientes.</p>
-        </article>
-
-        <article class="tarjeta-linea">
-          <span class="linea-numero">3</span>
-          <h3>Sensibilización y concienciación</h3>
-          <p>Busca promover el respeto y la valoración de la diversidad en la comunidad, autoridades, familias e instituciones. Incluye charlas, conversatorios, experiencias, actividades de difusión e identificación de aliados para fortalecer la educación para todos.</p>
-        </article>
-
-        <article class="tarjeta-linea">
-          <span class="linea-numero">4</span>
-          <h3>Producción y adaptación de materiales</h3>
-          <p>Se relaciona con la planificación, producción, adaptación y uso de materiales y recursos educativos para la atención a la diversidad. Su finalidad es complementar o fortalecer el aprendizaje de los estudiantes, considerando los apoyos que requieren y las características del contexto educativo.</p>
-        </article>
+        <article class="tarjeta-linea"><span class="linea-numero">1</span><h3>Información e investigación</h3><p>Esta línea se orienta a indagar y difundir información actualizada sobre la atención a la diversidad y las necesidades de estudiantes con discapacidad, talento o superdotación. Puede incluir diagnósticos, boletines, folletos, investigaciones breves, biblioteca, aula tecnológica accesible y actividades de extensión cultural.</p></article>
+        <article class="tarjeta-linea"><span class="linea-numero">2</span><h3>Capacitación</h3><p>Comprende acciones dirigidas al fortalecimiento de capacidades de docentes y profesionales no docentes de instituciones y servicios educativos. Considera la identificación de necesidades formativas, la coordinación con DRE o UGEL y la difusión de las capacitaciones por los canales oficiales correspondientes.</p></article>
+        <article class="tarjeta-linea"><span class="linea-numero">3</span><h3>Sensibilización y concienciación</h3><p>Busca promover el respeto y la valoración de la diversidad en la comunidad, autoridades, familias e instituciones. Incluye charlas, conversatorios, experiencias, actividades de difusión e identificación de aliados para fortalecer la educación para todos.</p></article>
+        <article class="tarjeta-linea"><span class="linea-numero">4</span><h3>Producción y adaptación de materiales</h3><p>Se relaciona con la planificación, producción, adaptación y uso de materiales y recursos educativos para la atención a la diversidad. Su finalidad es complementar o fortalecer el aprendizaje de los estudiantes, considerando los apoyos que requieren y las características del contexto educativo.</p></article>
       </div>
-
-      <div class="franja-destacada">
-        <strong>Articulación con CREBE Ucayali:</strong> esta plataforma permite ordenar recursos digitales, orientar el acceso a materiales, difundir novedades, apoyar procesos de capacitación y facilitar información general relacionada con la inclusión educativa. Por ello, los repositorios y accesos complementarios se organizan como apoyo a las líneas de acción del CREBE.
-      </div>
-
-      <div class="fuente-oficial">
-        <strong>Fuente oficial:</strong> Ministerio de Educación. Cartilla informativa "Centro de Recursos de Educación Básica Especial - CREBE". El documento precisa que, de acuerdo con la Resolución Viceministerial N.° 151-2023-MINEDU, los CREBE cuentan con cuatro líneas de acción: información e investigación, capacitación, sensibilización y concienciación, y producción y/o adaptación de materiales y recursos educativos para la atención a la diversidad. <a href="https://www.minedu.gob.pe/educacionbasicaespecial/pdf/cartilla-informativa-crebe-final.pdf" target="_blank" rel="noopener noreferrer">Ver documento oficial</a>.
-      </div>
+      <div class="franja-destacada"><strong>Articulación con CREBE Ucayali:</strong> esta plataforma permite ordenar recursos digitales, orientar el acceso a materiales, difundir novedades, apoyar procesos de capacitación y facilitar información general relacionada con la inclusión educativa. Por ello, los repositorios y accesos complementarios se organizan como apoyo a las líneas de acción del CREBE.</div>
+      <div class="fuente-oficial"><strong>Fuente oficial:</strong> Ministerio de Educación. Cartilla informativa "Centro de Recursos de Educación Básica Especial - CREBE". El documento precisa que, de acuerdo con la Resolución Viceministerial N.° 151-2023-MINEDU, los CREBE cuentan con cuatro líneas de acción: información e investigación, capacitación, sensibilización y concienciación, y producción y/o adaptación de materiales y recursos educativos para la atención a la diversidad. <a href="https://www.minedu.gob.pe/educacionbasicaespecial/pdf/cartilla-informativa-crebe-final.pdf" target="_blank" rel="noopener noreferrer">Ver documento oficial</a>.</div>
     </section>
   </main>
-
   <footer>
     <div class="footer-contenido">
       <div class="footer-bloque footer-identidad">
         <img class="logo-footer" src="https://raw.githubusercontent.com/gabriel-lsp/banco-digital-lsp/main/logo-crebe.png" alt="Logo del CREBE Señor de los Milagros - Ucayali">
-        <div>
-          <h2>Accesos Complementarios</h2>
-          <p>Espacio de entrada a las páginas generales de CREBE Ucayali.</p>
-        </div>
+        <div><h2>Accesos Complementarios</h2><p>Espacio de entrada a las páginas generales de CREBE Ucayali.</p></div>
       </div>
-
-      <div class="footer-bloque">
-        <h2>Enlaces</h2>
-        <p>
-          <a href="index.html">Accesos</a><br>
-          <a href="nosotros.html">Nosotros</a><br>
-          <a href="que-hacemos.html">Qué hacemos</a><br>
-          <a href="repositorios.html">Repositorios</a><br>
-          <a href="contacto.html">Contacto</a><br>
-          <a href="firma-tu-visita.html">Firma tu visita</a>
-        </p>
-      </div>
-
-      <div class="footer-bloque">
-        <h2>Contacto CREBE</h2>
-        <p>
-          CREBE "Señor de los Milagros" - Ucayali<br>
-          Correo: senordelosmilagroscrebe@gmail.com<br>
-          Horario: lunes a viernes, 8:00 a.m. - 12:00 p.m.<br>
-          <a href="https://www.facebook.com/CREBESM" target="_blank" rel="noopener noreferrer">Facebook</a>
-        </p>
-      </div>
+      <div class="footer-bloque"><h2>Enlaces</h2><p><a href="index.html">Accesos</a><br><a href="nosotros.html">Nosotros</a><br><a href="que-hacemos.html">Qué hacemos</a><br><a href="repositorios.html">Repositorios</a><br><a href="contacto.html">Contacto</a><br><a href="firma-tu-visita.html">Firma tu visita</a></p></div>
+      <div class="footer-bloque"><h2>Contacto CREBE</h2><p>CREBE "Señor de los Milagros" - Ucayali<br>Correo: senordelosmilagroscrebe@gmail.com<br>Horario: lunes a viernes, 8:00 a.m. - 12:00 p.m.<br><a href="https://www.facebook.com/CREBESM" target="_blank" rel="noopener noreferrer">Facebook</a></p></div>
     </div>
-
-    <div class="footer-final">
-      <p>© 2026 Gabriel Berrospi. Desarrollo original. Uso institucional autorizado al CREBE "Señor de los Milagros" - Ucayali.</p>
-    </div>
+    <div class="footer-final"><p>© 2026 Gabriel Berrospi. Desarrollo original. Uso institucional autorizado al CREBE "Señor de los Milagros" - Ucayali.</p></div>
   </footer>
 </body>
 </html>
