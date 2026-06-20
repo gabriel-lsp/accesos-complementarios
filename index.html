@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Accesos Complementarios de CREBE Ucayali: espacio de entrada a páginas generales del proyecto, directorio institucional, repositorios, novedades, contacto, registro de visita y líneas de acción.">
+  <meta name="description" content="Accesos Complementarios de CREBE Ucayali: directorio de entrada a páginas generales del proyecto, repositorios, contacto, registro de visita, calendario, galería y materiales institucionales.">
   <title>Accesos Complementarios | CREBE Ucayali</title>
 
   <style>
@@ -240,109 +240,72 @@
       color:var(--texto-suave);
     }
 
-    .grid-accesos{
+    .directorio-accesos{
       display:grid;
-      grid-template-columns:repeat(3,minmax(0,1fr));
-      gap:26px;
-      margin-top:34px;
+      gap:12px;
+      margin-top:28px;
     }
 
-    .tarjeta-acceso{
-      position:relative;
-      display:flex;
-      min-height:360px;
-      padding:30px 30px 104px;
-      overflow:hidden;
-      background:linear-gradient(180deg,#fff 0%,#f7fbfa 100%);
-      border:1.5px solid #97cbc4;
-      border-radius:30px;
-      box-shadow:0 18px 42px rgba(23,50,77,.06);
-      flex-direction:column;
-      justify-content:flex-start;
+    .directorio-item{
+      display:grid;
+      grid-template-columns:auto 1fr auto;
+      gap:16px;
+      align-items:center;
+      padding:16px;
+      color:inherit;
+      background:#fff;
+      border:1px solid var(--borde);
+      border-radius:18px;
       text-decoration:none;
+      box-shadow:0 8px 22px rgba(23,50,77,.05);
       transition:transform .18s ease, box-shadow .18s ease, border-color .18s ease;
     }
 
-    .tarjeta-acceso:before{
-      position:absolute;
-      left:30px;
-      bottom:30px;
-      z-index:1;
-      padding:9px 17px;
-      color:#00756c;
-      background:#d9f3ed;
-      border-radius:999px;
-      font-size:.95rem;
-      font-weight:900;
-      content:"Disponible";
+    .directorio-item:hover{
+      transform:translateY(-2px);
+      border-color:#b7cbd5;
+      box-shadow:0 14px 30px rgba(23,50,77,.10);
     }
 
-    .tarjeta-acceso:hover{
-      transform:translateY(-4px);
-      border-color:#0f8278;
-      box-shadow:0 24px 52px rgba(23,50,77,.12);
-    }
-
-    .tarjeta-superior{
-      position:relative;
-      z-index:1;
-      display:flex;
-      align-items:flex-start;
-      justify-content:flex-start;
-      gap:12px;
-    }
-
-    .numero-acceso{
+    .directorio-icono{
       display:grid;
-      width:76px;
-      height:76px;
+      width:50px;
+      height:50px;
       place-items:center;
-      color:#00756c;
-      background:#e4f3ef;
-      border-radius:23px;
-      font-size:1.15rem;
+      color:var(--verde-700);
+      background:var(--verde-100);
+      border-radius:15px;
+      font-size:.82rem;
       font-weight:900;
-      letter-spacing:.02em;
+      letter-spacing:.04em;
     }
 
-    .codigo-acceso{display:none}
-
-    .tarjeta-acceso h3{
-      position:relative;
-      z-index:1;
-      margin:26px 0 12px;
-      color:#02365a;
-      font-family:Arial,Helvetica,sans-serif;
-      font-size:clamp(1.32rem,1.7vw,1.62rem);
-      font-weight:900;
-      line-height:1.15;
-      letter-spacing:-.02em;
-    }
-
-    .tarjeta-acceso p{
-      position:relative;
-      z-index:1;
+    .directorio-texto h3{
       margin:0;
-      color:#365f8b;
-      font-size:clamp(1rem,1.35vw,1.18rem);
-      line-height:1.55;
+      color:var(--azul-900);
+      font-size:1.05rem;
+      font-weight:900;
+      line-height:1.2;
     }
 
-    .ver-mas{
-      position:absolute;
-      right:30px;
-      bottom:30px;
-      z-index:1;
+    .directorio-texto p{
+      margin:5px 0 0;
+      color:var(--texto-suave);
+      font-size:.92rem;
+      line-height:1.45;
+    }
+
+    .directorio-boton{
       display:inline-flex;
-      width:fit-content;
-      margin-top:0;
-      padding:10px 22px;
+      align-items:center;
+      justify-content:center;
+      padding:9px 16px;
       color:#fff;
-      background:#0b8277;
+      background:var(--verde-700);
       border-radius:999px;
-      font-size:1rem;
+      font-size:.86rem;
       font-weight:900;
-      text-decoration:none;
+      white-space:nowrap;
     }
 
     .nota-inferior{
@@ -417,7 +380,6 @@
     }
 
     @media(max-width:980px){
-      .grid-accesos{grid-template-columns:repeat(2,minmax(0,1fr))}
       .footer-contenido{grid-template-columns:1fr}
       .footer-identidad{align-items:center}
     }
@@ -450,21 +412,15 @@
 
       .panel-encabezado{flex-direction:column}
 
-      .grid-accesos{grid-template-columns:1fr}
-
-      .tarjeta-acceso{
-        min-height:330px;
-        padding:26px 26px 96px;
+      .directorio-item{
+        grid-template-columns:auto 1fr;
+        align-items:flex-start;
       }
 
-      .tarjeta-acceso:before{
-        left:26px;
-        bottom:26px;
-      }
-
-      .ver-mas{
-        right:26px;
-        bottom:26px;
+      .directorio-boton{
+        grid-column:1 / -1;
+        width:fit-content;
+        margin-left:66px;
       }
 
       .footer-identidad{flex-direction:column}
@@ -473,6 +429,11 @@
         width:60px;
         max-width:60px;
       }
+    }
+
+    @media(max-width:480px){
+      .directorio-item{grid-template-columns:1fr}
+      .directorio-boton{margin-left:0}
     }
   </style>
 </head>
@@ -509,155 +470,119 @@
     <section class="panel-accesos" aria-labelledby="titulo-accesos">
       <div class="panel-encabezado">
         <div>
-          <p class="seccion-etiqueta">Menú principal</p>
+          <p class="seccion-etiqueta">Directorio institucional</p>
           <h2 id="titulo-accesos">Selecciona una sección</h2>
-          <p class="descripcion-panel">Cada tarjeta dirige a una página independiente. Este inicio funciona solo como acceso organizado a los espacios generales del proyecto.</p>
+          <p class="descripcion-panel">Cada fila dirige a una página independiente. Este directorio permite ubicar de forma rápida los espacios generales y complementarios de la plataforma.</p>
         </div>
       </div>
 
-      <div class="grid-accesos">
-        <a class="tarjeta-acceso" href="nosotros.html" aria-label="Ir a la página Nosotros">
-          <div>
-            <div class="tarjeta-superior">
-              <span class="numero-acceso">NOS</span>
-              <span class="codigo-acceso">Identidad</span>
-            </div>
+      <div class="directorio-accesos">
+        <a class="directorio-item" href="nosotros.html" aria-label="Ir a la página Nosotros">
+          <span class="directorio-icono">NOS</span>
+          <span class="directorio-texto">
             <h3>Nosotros</h3>
             <p>Presentación del proyecto, su propósito general y el sentido de la plataforma.</p>
-          </div>
-          <span class="ver-mas">Ingresar</span>
+          </span>
+          <span class="directorio-boton">Ingresar</span>
         </a>
 
-        <a class="tarjeta-acceso" href="que-hacemos.html" aria-label="Ir a la página Qué hacemos">
-          <div>
-            <div class="tarjeta-superior">
-              <span class="numero-acceso">QH</span>
-              <span class="codigo-acceso">Acción</span>
-            </div>
+        <a class="directorio-item" href="que-hacemos.html" aria-label="Ir a la página Qué hacemos">
+          <span class="directorio-icono">QH</span>
+          <span class="directorio-texto">
             <h3>Qué hacemos</h3>
             <p>Descripción de las acciones que se desarrollan mediante los módulos digitales.</p>
-          </div>
-          <span class="ver-mas">Ingresar</span>
+          </span>
+          <span class="directorio-boton">Ingresar</span>
         </a>
 
-        <a class="tarjeta-acceso" href="directorio-institucional.html" aria-label="Ir a la página Directorio institucional">
-          <div>
-            <div class="tarjeta-superior">
-              <span class="numero-acceso">DI</span>
-              <span class="codigo-acceso">Equipo</span>
-            </div>
+        <a class="directorio-item" href="directorio-institucional.html" aria-label="Ir a la página Directorio institucional">
+          <span class="directorio-icono">DI</span>
+          <span class="directorio-texto">
             <h3>Directorio institucional</h3>
             <p>Integrantes responsables o vinculados a la gestión, revisión y acompañamiento de los recursos digitales.</p>
-          </div>
-          <span class="ver-mas">Ingresar</span>
+          </span>
+          <span class="directorio-boton">Ingresar</span>
         </a>
 
-        <a class="tarjeta-acceso" href="repositorios.html" aria-label="Ir a la página Repositorios">
-          <div>
-            <div class="tarjeta-superior">
-              <span class="numero-acceso">REP</span>
-              <span class="codigo-acceso">Módulos</span>
-            </div>
+        <a class="directorio-item" href="repositorios.html" aria-label="Ir a la página Repositorios">
+          <span class="directorio-icono">REP</span>
+          <span class="directorio-texto">
             <h3>Repositorios</h3>
             <p>Acceso a BDA, MEA, JEA, CAP, NI y demás espacios del ecosistema digital.</p>
-          </div>
-          <span class="ver-mas">Ingresar</span>
+          </span>
+          <span class="directorio-boton">Ingresar</span>
         </a>
 
-        <a class="tarjeta-acceso" href="lineas-de-accion.html" aria-label="Ir a la página Líneas de acción">
-          <div>
-            <div class="tarjeta-superior">
-              <span class="numero-acceso">LA</span>
-              <span class="codigo-acceso">Ejes</span>
-            </div>
+        <a class="directorio-item" href="lineas-de-accion.html" aria-label="Ir a la página Líneas de acción">
+          <span class="directorio-icono">LA</span>
+          <span class="directorio-texto">
             <h3>Líneas de acción</h3>
             <p>Organización de los ejes que orientan el desarrollo y crecimiento del proyecto.</p>
-          </div>
-          <span class="ver-mas">Ingresar</span>
+          </span>
+          <span class="directorio-boton">Ingresar</span>
         </a>
 
-        <a class="tarjeta-acceso" href="contacto.html" aria-label="Ir a la página Contacto">
-          <div>
-            <div class="tarjeta-superior">
-              <span class="numero-acceso">CON</span>
-              <span class="codigo-acceso">Consulta</span>
-            </div>
+        <a class="directorio-item" href="contacto.html" aria-label="Ir a la página Contacto">
+          <span class="directorio-icono">CON</span>
+          <span class="directorio-texto">
             <h3>Contacto</h3>
             <p>Canales para consultas, sugerencias, coordinación o reporte de errores.</p>
-          </div>
-          <span class="ver-mas">Ingresar</span>
+          </span>
+          <span class="directorio-boton">Ingresar</span>
         </a>
 
-        <a class="tarjeta-acceso" href="firma-tu-visita.html" aria-label="Ir a la página Firma tu visita">
-          <div>
-            <div class="tarjeta-superior">
-              <span class="numero-acceso">FTV</span>
-              <span class="codigo-acceso">Registro</span>
-            </div>
+        <a class="directorio-item" href="firma-tu-visita.html" aria-label="Ir a la página Firma tu visita">
+          <span class="directorio-icono">FTV</span>
+          <span class="directorio-texto">
             <h3>Firma tu visita</h3>
             <p>Registro voluntario para conocer el alcance de uso y participación en la plataforma.</p>
-          </div>
-          <span class="ver-mas">Ingresar</span>
+          </span>
+          <span class="directorio-boton">Ingresar</span>
         </a>
 
-        <a class="tarjeta-acceso" href="guia-de-uso.html" aria-label="Ir a la página Guía de uso">
-          <div>
-            <div class="tarjeta-superior">
-              <span class="numero-acceso">GU</span>
-              <span class="codigo-acceso">Ayuda</span>
-            </div>
+        <a class="directorio-item" href="guia-de-uso.html" aria-label="Ir a la página Guía de uso">
+          <span class="directorio-icono">GU</span>
+          <span class="directorio-texto">
             <h3>Guía de uso</h3>
             <p>Orientaciones básicas para navegar los módulos y aprovechar sus recursos.</p>
-          </div>
-          <span class="ver-mas">Ingresar</span>
+          </span>
+          <span class="directorio-boton">Ingresar</span>
         </a>
 
-        <a class="tarjeta-acceso" href="creditos-y-licencia.html" aria-label="Ir a la página Créditos y licencia">
-          <div>
-            <div class="tarjeta-superior">
-              <span class="numero-acceso">CL</span>
-              <span class="codigo-acceso">Autoría</span>
-            </div>
+        <a class="directorio-item" href="creditos-y-licencia.html" aria-label="Ir a la página Créditos y licencia">
+          <span class="directorio-icono">CL</span>
+          <span class="directorio-texto">
             <h3>Créditos y licencia</h3>
             <p>Reconocimiento de autoría, uso institucional autorizado y condiciones generales de uso.</p>
-          </div>
-          <span class="ver-mas">Ingresar</span>
+          </span>
+          <span class="directorio-boton">Ingresar</span>
         </a>
 
-        <a class="tarjeta-acceso" href="galeria.html" aria-label="Ir a la página Galería">
-          <div>
-            <div class="tarjeta-superior">
-              <span class="numero-acceso">GAL</span>
-              <span class="codigo-acceso">Registro visual</span>
-            </div>
-            <h3>Galería</h3>
-            <p>Espacio para presentar fotografías y evidencias visuales de actividades desarrolladas por el CREBE Ucayali.</p>
-          </div>
-          <span class="ver-mas">Ingresar</span>
-        </a>
-
-        <a class="tarjeta-acceso" href="calendario.html" aria-label="Ir a la página Calendario">
-          <div>
-            <div class="tarjeta-superior">
-              <span class="numero-acceso">CAL</span>
-              <span class="codigo-acceso">Agenda</span>
-            </div>
+        <a class="directorio-item" href="calendario.html" aria-label="Ir a la página Calendario">
+          <span class="directorio-icono">CAL</span>
+          <span class="directorio-texto">
             <h3>Calendario</h3>
             <p>Organización de actividades, fechas institucionales y acciones programadas durante el año.</p>
-          </div>
-          <span class="ver-mas">Ingresar</span>
+          </span>
+          <span class="directorio-boton">Ingresar</span>
         </a>
 
-        <a class="tarjeta-acceso" href="recursos-institucionales.html" aria-label="Ir a la página Materiales disponibles y producidos">
-          <div>
-            <div class="tarjeta-superior">
-              <span class="numero-acceso">MAT</span>
-              <span class="codigo-acceso">Materiales</span>
-            </div>
+        <a class="directorio-item" href="galeria.html" aria-label="Ir a la página Galería">
+          <span class="directorio-icono">GAL</span>
+          <span class="directorio-texto">
+            <h3>Galería</h3>
+            <p>Espacio para presentar fotografías y evidencias visuales de actividades desarrolladas por el CREBE Ucayali.</p>
+          </span>
+          <span class="directorio-boton">Ingresar</span>
+        </a>
+
+        <a class="directorio-item" href="recursos-institucionales.html" aria-label="Ir a la página Materiales disponibles y producidos">
+          <span class="directorio-icono">MDP</span>
+          <span class="directorio-texto">
             <h3>Materiales disponibles y producidos</h3>
             <p>Espacio para organizar textos en braille, equipos como la máquina Perkins y materiales elaborados como silabarios, rutinas visuales y recursos adaptados.</p>
-          </div>
-          <span class="ver-mas">Ingresar</span>
+          </span>
+          <span class="directorio-boton">Ingresar</span>
         </a>
       </div>
 
