@@ -1,6 +1,6 @@
 # Recursos complementarios - AC
 
-Esta carpeta está prevista para organizar recursos complementarios del repositorio **Accesos Complementarios - AC**.
+Esta carpeta está prevista para organizar recursos complementarios del repositorio **Accesos Complementarios - AC**, desarrollado como parte del **proyecto personal** del **Psicólogo Gabriel Berrospi**.
 
 ## Finalidad
 
@@ -26,4 +26,4 @@ Los recursos complementarios permiten ampliar la experiencia del usuario sin sob
 
 ## Autoría
 
-La organización funcional de esta carpeta forma parte del desarrollo original del **Psicólogo Gabriel Berrospi**, con uso institucional autorizado al CREBE "Señor de los Milagros" - Ucayali.
+La organización funcional de esta carpeta forma parte del **proyecto personal y desarrollo original del Psicólogo Gabriel Berrospi**, con uso institucional autorizado al CREBE "Señor de los Milagros" - Ucayali.
