@@ -1,8 +1,14 @@
 # Accesos Complementarios - AC
 
-Repositorio digital correspondiente al módulo **AC = Accesos Complementarios** del ecosistema web educativo accesible vinculado al CREBE "Señor de los Milagros" - Ucayali.
+Repositorio digital correspondiente al módulo **AC = Accesos Complementarios** del ecosistema web educativo accesible impulsado como **proyecto personal de desarrollo propio** por el **Psicólogo Gabriel Berrospi**.
 
 Este repositorio reúne páginas generales de apoyo que complementan los módulos principales de la plataforma. Su finalidad es facilitar rutas de acceso a información institucional, contacto, directorios, orientación ciudadana, registro de visitas y otros contenidos complementarios que ayudan a la navegación y uso ordenado del ecosistema digital.
+
+## Naturaleza del proyecto
+
+AC forma parte de una iniciativa personal desarrollada con recursos propios, orientada a responder a necesidades de acceso, organización de información, inclusión educativa, accesibilidad y disponibilidad de herramientas digitales de apoyo para la comunidad educativa.
+
+El repositorio puede ser utilizado institucionalmente por el **CREBE "Señor de los Milagros" - Ucayali**, conforme a la autorización otorgada por el autor, sin que ello modifique la naturaleza personal del proyecto ni transfiera la autoría del desarrollo original.
 
 ## Autoría
 
