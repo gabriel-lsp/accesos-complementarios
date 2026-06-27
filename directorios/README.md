@@ -8,8 +8,8 @@ Su finalidad es organizar información de consulta sobre entidades, servicios, c
 
 ## Páginas principales
 
-- `directorio-ciudadano.html`: reúne entidades públicas y servicios de orientación para la comunidad educativa y ciudadanía.
-- `directorio-institucional.html`: organiza información institucional y rutas vinculadas a la gestión del ecosistema CREBE.
+- `directorio-ciudadano.html`: reúne entidades públicas y servicios de orientación para usuarios y ciudadanía.
+- `directorio-institucional.html`: organiza información y rutas de consulta vinculadas al proyecto.
 
 ## Propósito funcional
 
@@ -19,10 +19,10 @@ Los directorios permiten ubicar información de manera rápida, filtrar por cate
 
 - Priorizar fuentes oficiales y enlaces verificables.
 - Registrar observaciones cuando un dato requiera confirmación periódica.
-- Mantener lenguaje claro y útil para docentes, familias y comunidad educativa.
+- Mantener lenguaje claro y útil.
 - Evitar datos sensibles o información privada no autorizada.
-- Actualizar entidades y enlaces cuando cambien las fuentes institucionales.
+- Actualizar entidades y enlaces cuando cambien las fuentes oficiales.
 
 ## Autoría
 
-La estructura, organización y adaptación funcional de esta carpeta forman parte del **proyecto personal y desarrollo original del Psicólogo Gabriel Berrospi**, con uso institucional autorizado al CREBE "Señor de los Milagros" - Ucayali.
+La estructura, organización y adaptación funcional de esta carpeta forman parte del **proyecto personal y desarrollo original del Psicólogo Gabriel Berrospi**.
