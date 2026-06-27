@@ -1,6 +1,6 @@
 # Recursos visuales - AC
 
-Esta carpeta está destinada a almacenar recursos visuales generales utilizados por el repositorio **Accesos Complementarios - AC**.
+Esta carpeta está destinada a almacenar recursos visuales generales utilizados por el repositorio **Accesos Complementarios - AC**, desarrollado como parte del **proyecto personal** del **Psicólogo Gabriel Berrospi**.
 
 ## Finalidad
 
@@ -20,6 +20,6 @@ Los recursos visuales ayudan a mantener la identidad del ecosistema CREBE, la co
 
 ## Autoría y créditos
 
-La organización funcional de esta carpeta forma parte del desarrollo original del **Psicólogo Gabriel Berrospi**.
+La organización funcional de esta carpeta forma parte del **proyecto personal y desarrollo original del Psicólogo Gabriel Berrospi**.
 
 Los logotipos, imágenes institucionales o recursos de terceros conservan sus derechos y créditos correspondientes. Su uso debe mantenerse con fines informativos, educativos e institucionales.
