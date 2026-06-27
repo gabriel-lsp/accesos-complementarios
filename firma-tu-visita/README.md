@@ -4,22 +4,22 @@ Esta carpeta contiene el componente **Firma tu visita**, integrado al repositori
 
 ## Finalidad
 
-Su finalidad es ofrecer un espacio sencillo de registro voluntario para conocer la presencia, participación e interacción de usuarios dentro del ecosistema digital CREBE.
+Ofrecer un espacio sencillo de registro voluntario para conocer la presencia, participación e interacción de usuarios dentro del proyecto digital.
 
 ## Propósito
 
-El registro de visita permite recoger una referencia básica de participación, fortalecer la retroalimentación y evidenciar el alcance del uso de los recursos digitales por parte de docentes, familias, estudiantes, directivos u otros usuarios interesados.
+El registro de visita permite recoger una referencia básica de participación, fortalecer la retroalimentación y evidenciar el alcance del uso de los recursos digitales.
 
 ## Funciones principales
 
 - Presentar un acceso diferenciado para registrar la visita.
 - Recoger información básica y voluntaria del usuario.
-- Favorecer la trazabilidad del uso del ecosistema sin reemplazar registros administrativos formales.
-- Servir como punto complementario de participación ciudadana y comunidad educativa.
+- Favorecer la trazabilidad del uso del proyecto.
+- Servir como punto complementario de participación.
 
 ## Alcance
 
-Este componente tiene una finalidad orientativa y participativa. No debe usarse para recolectar información sensible, privada o innecesaria. Los datos solicitados deben ser mínimos, pertinentes y claros para el usuario.
+Este componente tiene una finalidad orientativa y participativa. Los datos solicitados deben ser mínimos, pertinentes y claros para el usuario.
 
 ## Criterios de cuidado
 
@@ -30,4 +30,4 @@ Este componente tiene una finalidad orientativa y participativa. No debe usarse 
 
 ## Autoría
 
-La estructura y adaptación de este componente forman parte del **proyecto personal y desarrollo original del Psicólogo Gabriel Berrospi**, con uso institucional autorizado al CREBE "Señor de los Milagros" - Ucayali.
+La estructura y adaptación de este componente forman parte del **proyecto personal y desarrollo original del Psicólogo Gabriel Berrospi**.
