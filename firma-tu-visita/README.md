@@ -1,6 +1,6 @@
 # Firma tu visita - AC
 
-Esta carpeta contiene el componente **Firma tu visita**, integrado al repositorio Accesos Complementarios.
+Esta carpeta contiene el componente **Firma tu visita**, integrado al repositorio Accesos Complementarios como parte del **proyecto personal** del **Psicólogo Gabriel Berrospi**.
 
 ## Finalidad
 
@@ -30,4 +30,4 @@ Este componente tiene una finalidad orientativa y participativa. No debe usarse 
 
 ## Autoría
 
-La estructura y adaptación de este componente forman parte del desarrollo original del **Psicólogo Gabriel Berrospi**, con uso institucional autorizado al CREBE "Señor de los Milagros" - Ucayali.
+La estructura y adaptación de este componente forman parte del **proyecto personal y desarrollo original del Psicólogo Gabriel Berrospi**, con uso institucional autorizado al CREBE "Señor de los Milagros" - Ucayali.
