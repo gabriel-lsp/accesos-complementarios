@@ -2,7 +2,7 @@
 
 ## Identificación
 
-**AC = Accesos Complementarios** es un repositorio de apoyo dentro del ecosistema web educativo accesible CREBE.
+**AC = Accesos Complementarios** es un repositorio de apoyo dentro del ecosistema web educativo accesible CREBE, impulsado como **proyecto personal de desarrollo propio** por el **Psicólogo Gabriel Berrospi**.
 
 ## Objetivo general
 
@@ -11,6 +11,12 @@ Organizar páginas generales de orientación, contacto, directorios, registro de
 ## Finalidad
 
 La finalidad de AC es actuar como un módulo transversal de soporte. Su función no es reemplazar a los repositorios principales, sino brindar accesos complementarios que permitan al usuario ubicarse, comunicarse, consultar entidades, registrar participación y acceder a información de apoyo.
+
+## Naturaleza del proyecto
+
+AC forma parte de una iniciativa personal desarrollada con recursos propios, orientada a atender necesidades de acceso a información, organización digital, inclusión educativa, accesibilidad y apoyo tecnológico para docentes, familias y comunidad educativa.
+
+Su uso institucional puede realizarse por autorización del autor, sin que ello implique que el repositorio pierda su naturaleza de proyecto personal ni que se transfiera la autoría del desarrollo original.
 
 ## Propósitos específicos
 
@@ -35,4 +41,4 @@ Este repositorio complementa los módulos principales del ecosistema CREBE, como
 
 ## Autoría
 
-La estructura, finalidad, organización funcional y documentación del repositorio forman parte del desarrollo original del **Psicólogo Gabriel Berrospi**, con uso institucional autorizado al CREBE "Señor de los Milagros" - Ucayali.
+La estructura, finalidad, organización funcional y documentación del repositorio forman parte del **proyecto personal y desarrollo original del Psicólogo Gabriel Berrospi**, con uso institucional autorizado al CREBE "Señor de los Milagros" - Ucayali.
