@@ -25,6 +25,44 @@
     }
   ];
 
+  function insertarRefuerzoContraste(){
+    if(document.getElementById('eva-refuerzo-contraste')) return;
+    const estilo = document.createElement('style');
+    estilo.id = 'eva-refuerzo-contraste';
+    estilo.textContent = `
+      html.eva-alto-contraste body .panel-presentacion,
+      html.eva-alto-contraste body .aviso-pedagogico,
+      html.eva-alto-contraste body .tarjeta-material,
+      html.eva-alto-contraste body .nota{
+        color:#ffffff!important;
+        background:#000000!important;
+        border-color:#ffffff!important;
+        box-shadow:none!important;
+      }
+      html.eva-alto-contraste body .panel-presentacion h2,
+      html.eva-alto-contraste body .panel-presentacion p,
+      html.eva-alto-contraste body .aviso-pedagogico h2,
+      html.eva-alto-contraste body .aviso-pedagogico p,
+      html.eva-alto-contraste body .tarjeta-material h3,
+      html.eva-alto-contraste body .tarjeta-material p,
+      html.eva-alto-contraste body .nota h2,
+      html.eva-alto-contraste body .nota p{
+        color:#ffffff!important;
+        background:transparent!important;
+        text-shadow:none!important;
+        opacity:1!important;
+      }
+      html.eva-alto-contraste body .material-icono,
+      html.eva-alto-contraste body .estado-material,
+      html.eva-alto-contraste body .enlace-material{
+        color:#ffff00!important;
+        background:#07324a!important;
+        border:1px solid #ffff00!important;
+      }
+    `;
+    document.head.appendChild(estilo);
+  }
+
   function obtenerPreferencias(){
     try{
       const guardado = localStorage.getItem(STORAGE_KEY);
@@ -49,6 +87,7 @@
   }
 
   function aplicarPreferencias(preferencias){
+    insertarRefuerzoContraste();
     const preferenciasLimpias = limpiarPreferenciasObsoletas(preferencias || {});
     CLASES.forEach(clase => document.documentElement.classList.remove(clase));
     opciones.forEach(opcion => {
