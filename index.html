@@ -6,12 +6,36 @@
   <meta name="description" content="Accesos Complementarios del CREBE Ucayali: entrada a páginas generales de orientación, contacto, directorio, registro de visita y enlaces institucionales.">
   <title>Accesos Complementarios | CREBE Ucayali</title>
   <link rel="stylesheet" href="estilos.css?v=2">
+   <style>
+  .patron-portada {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    overflow: hidden;
+    pointer-events: none;
+
+    background-image: url("https://gabriel-lsp.github.io/banco-digital-accesible/patron-shipibo.png");
+    background-repeat: repeat;
+    background-size: cover;
+    background-position: center;
+
+    opacity: .30;
+    filter: saturate(1.15) contrast(1.08);
+}    
+    .cabecera .navegacion,
+.cabecera .portada {
+  position: relative;
+  z-index: 1;
+}
+  </style>
 </head>
 
 <body>
   <a class="salto-contenido" href="#contenido-principal">Ir al contenido</a>
 
   <header class="cabecera" id="inicio">
+    <div class="patron-portada" aria-hidden="true"></div>
+
     <nav class="navegacion" aria-label="Navegación principal">
       <a class="marca" href="index.html" aria-label="Volver al inicio de Accesos Complementarios">
         <span class="marca-icono" aria-hidden="true">AC</span>
