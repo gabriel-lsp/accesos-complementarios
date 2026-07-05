@@ -132,7 +132,11 @@ html.eva-alto-contraste .bloque-accion,
 html.eva-alto-contraste .panel-registro,
 html.eva-alto-contraste .campo-registro,
 html.eva-alto-contraste .opcion-modulo,
-html.eva-alto-contraste .bloque-informativo-registro{
+html.eva-alto-contraste .bloque-informativo-registro,
+html.eva-alto-contraste .directorio-item,
+html.eva-alto-contraste .directorio-icono,
+html.eva-alto-contraste .directorio-boton,
+html.eva-alto-contraste .nota-inferior{
   color:#ffffff!important;
   background:#000000!important;
   border-color:#ffffff!important;
@@ -148,8 +152,14 @@ html.eva-alto-contraste label,
 html.eva-alto-contraste .opcion-modulo span,
 html.eva-alto-contraste .titulo-campo,
 html.eva-alto-contraste .ayuda-campo,
-html.eva-alto-contraste .texto-opcional{
+html.eva-alto-contraste .texto-opcional,
+html.eva-alto-contraste .directorio-texto,
+html.eva-alto-contraste .directorio-texto h3,
+html.eva-alto-contraste .directorio-texto p,
+html.eva-alto-contraste .directorio-icono{
   color:#ffffff!important;
+  text-shadow:none!important;
+  opacity:1!important;
 }
 
 html.eva-alto-contraste input,
@@ -174,6 +184,19 @@ html.eva-alto-contraste .opcion-modulo:focus-within{
 html.eva-alto-contraste .opcion-modulo:has(input:checked) span,
 html.eva-alto-contraste .opcion-modulo:focus-within span{
   color:#ffff00!important;
+}
+
+html.eva-alto-contraste .directorio-boton,
+html.eva-alto-contraste .directorio-boton.neutro{
+  color:#ffff00!important;
+  background:#07324a!important;
+  border:1px solid #ffff00!important;
+}
+
+html.eva-alto-contraste .directorio-item:hover,
+html.eva-alto-contraste a.directorio-item:focus{
+  background:#07324a!important;
+  border-color:#ffff00!important;
 }
 
 html.eva-alto-contraste .eva-accesibilidad-panel,
