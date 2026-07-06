@@ -5,15 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Mapa web de Accesos Complementarios y del Ecosistema Virtual Accesible del CREBE Ucayali.">
   <title>Mapa web | Accesos Complementarios</title>
+  <link rel="stylesheet" href="estilos.css?v=6">
   <link rel="stylesheet" href="https://gabriel-lsp.github.io/accesos-complementarios/accesibilidad/accesibilidad.css?v=3">
-  <style>
-    :root{--azul-900:#07324a;--azul-800:#0b3550;--verde-700:#0f766e;--verde-100:#e6f4f1;--arena-50:#faf9f6;--texto:#102a43;--texto-suave:#486581;--borde:#d9e2ec;--blanco:#fff;--sombra:0 14px 34px rgba(16,42,67,.12)}
-    *{box-sizing:border-box}body{margin:0;color:var(--texto);background:var(--arena-50);font-family:Arial,Helvetica,sans-serif;line-height:1.66}a{color:inherit}.salto-contenido{position:absolute;top:12px;left:-999px;z-index:50;padding:10px 14px;color:#fff;background:var(--azul-900);border-radius:999px;font-weight:900}.salto-contenido:focus{left:12px}
-    .cabecera{position:relative;overflow:hidden;padding:30px 18px 145px;color:#ffffff;background:radial-gradient(circle at 84% 70%,rgba(255,255,255,.11) 0 22%,transparent 23%),radial-gradient(circle at 86% 74%,rgba(255,255,255,.08) 0 36%,transparent 37%),linear-gradient(135deg,#0b3550 0%,#0f4f57 48%,#0f766e 100%)}.patron-portada{position:absolute;inset:0;z-index:0;overflow:hidden;pointer-events:none;background-image:url("https://gabriel-lsp.github.io/banco-digital-accesible/patron-shipibo.webp?v=2");background-repeat:repeat;background-size:cover;background-position:center;opacity:.30;filter:saturate(1.15) contrast(1.08)}.navegacion,.portada{position:relative;z-index:1;max-width:1120px;margin:0 auto}.navegacion{display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap}.marca-institucional{display:inline-flex;align-items:center;gap:14px;max-width:min(560px,100%);color:#fff;text-decoration:none;font-weight:900;font-size:1.05rem}.marca-logo-superior{display:block;width:58px;height:58px;object-fit:contain;flex-shrink:0;padding:4px;background:rgba(255,255,255,.96);border-radius:18px;box-shadow:0 10px 24px rgba(0,0,0,.14)}.marca-texto-superior{display:block;padding-left:14px;border-left:2px solid rgba(255,255,255,.35);text-shadow:0 2px 4px rgba(0,0,0,.28)}.marca-modulo{display:block;margin:0 0 3px;color:#c9f7ee;font-size:.76rem;font-weight:900;line-height:1.15;letter-spacing:.16em;text-transform:uppercase}.marca-nombre-institucional{display:block;color:#fff;font-size:1.02rem;font-weight:900;line-height:1.2}.marca-detalle-institucional{display:block;margin-top:4px;color:rgba(255,255,255,.94);font-size:.88rem;font-weight:750;line-height:1.25}.enlaces-cabecera{display:flex;align-items:center;justify-content:flex-end;flex-wrap:wrap;gap:12px}.enlace-cabecera{display:inline-flex;align-items:center;justify-content:center;min-height:46px;padding:10px 22px;border:1px solid rgba(255,255,255,.45);border-radius:999px;color:#fff;text-decoration:none;font-size:1rem;font-weight:800;background:rgba(255,255,255,.08);text-shadow:0 2px 4px rgba(0,0,0,.24)}.enlace-cabecera:hover{background:rgba(255,255,255,.16)}.portada{margin-top:70px}.etiqueta-superior{margin:0 0 14px;color:#c9f7ee;font-size:.86rem;font-weight:900;letter-spacing:.18em;text-transform:uppercase;text-shadow:0 2px 4px rgba(0,0,0,.28)}.portada h1{max-width:900px;margin:0 0 22px;color:#fff;font-family:Georgia,"Times New Roman",serif;font-size:clamp(2.5rem,5.8vw,4.15rem);line-height:1.04;letter-spacing:-.04em;text-shadow:0 3px 5px rgba(0,0,0,.22)}.subtitulo{max-width:880px;margin:0;color:rgba(255,255,255,.96);font-size:1.22rem;line-height:1.65;text-shadow:0 2px 4px rgba(0,0,0,.28)}
-    main{position:relative;z-index:2;width:min(1120px,calc(100% - 40px));margin:-78px auto 0}.panel-contenido{padding:clamp(22px,4vw,36px);background:#fff;border:1px solid var(--borde);border-radius:24px;box-shadow:var(--sombra)}.seccion-etiqueta{margin:0 0 8px;color:var(--verde-700);font-size:.82rem;font-weight:900;letter-spacing:.14em;text-transform:uppercase}.panel-contenido h2{margin:0;color:var(--azul-900);font-family:Georgia,"Times New Roman",serif;font-size:clamp(1.7rem,3vw,2.45rem);font-weight:600;line-height:1.15}.texto-principal{max-width:900px;margin:14px 0 0;color:var(--texto-suave)}.grid-mapa{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px;margin-top:28px}.bloque-mapa{padding:24px;background:#fff;border:1px solid var(--borde);border-radius:20px;box-shadow:0 10px 24px rgba(16,42,67,.08)}.bloque-mapa h3{margin:0 0 12px;color:var(--azul-900);font-size:1.22rem;line-height:1.28}.bloque-mapa p{margin:0 0 14px;color:var(--texto-suave)}.lista-mapa{margin:0;padding:0;list-style:none}.lista-mapa li{margin:0 0 10px}.lista-mapa a{display:block;padding:12px 14px;color:var(--azul-900);background:#fbfdff;border:1px solid var(--borde);border-radius:14px;text-decoration:none;font-weight:800}.lista-mapa a:hover{color:#fff;background:var(--verde-700);border-color:var(--verde-700)}.lista-mapa .enlace-seccion{background:#f7fafc;color:var(--texto-suave);font-weight:800}.etiqueta-estado{display:inline-flex;align-items:center;min-height:28px;margin:0 0 12px;padding:4px 10px;color:var(--verde-700);background:var(--verde-100);border-radius:999px;font-size:.8rem;font-weight:900;letter-spacing:.08em;text-transform:uppercase}.mapa-amplio{grid-column:1/-1}.nota-mapa{margin-top:26px;padding:18px 20px;background:var(--verde-100);border-left:6px solid var(--verde-700);border-radius:18px;color:var(--texto)}.acciones-mapa{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}.boton-mapa{display:inline-flex;align-items:center;justify-content:center;min-height:46px;padding:10px 20px;color:#fff;background:var(--azul-900);border-radius:999px;text-decoration:none;font-weight:900}.boton-mapa.secundario{color:var(--azul-900);background:var(--verde-100)}.fecha-actualizacion{margin-top:22px;color:var(--texto-suave);font-size:.96rem}
-    footer{margin-top:56px;padding:38px clamp(18px,5vw,72px);color:#dbe9ee;background:var(--azul-900)}.footer-contenido{display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:32px;max-width:1120px;margin:0 auto}.footer-bloque h2{color:#fff;font-size:1rem}.footer-bloque p{margin:0;line-height:1.65}.footer-bloque a{color:#dbe9ee;text-decoration:underline;text-underline-offset:3px}.footer-identidad{display:flex;align-items:flex-start;gap:16px}.logo-footer{width:72px;max-width:72px;height:auto;object-fit:contain;background:#fff;border-radius:18px;padding:6px}.footer-final{max-width:1120px;margin:28px auto 0;padding-top:18px;border-top:1px solid rgba(255,255,255,.18)}
-    @media(max-width:900px){.grid-mapa,.footer-contenido{grid-template-columns:1fr}.mapa-amplio{grid-column:auto}}@media(max-width:700px){.cabecera{padding:26px 18px 116px}.navegacion{align-items:flex-start;flex-direction:column}.portada{margin-top:54px}.marca-institucional{align-items:flex-start}.marca-logo-superior{width:52px;height:52px;border-radius:16px}.marca-texto-superior{padding-left:12px}.marca-nombre-institucional{font-size:.94rem}.marca-detalle-institucional{font-size:.82rem}.enlaces-cabecera{justify-content:flex-start}main{width:min(100% - 28px,1120px)}}
-  </style>
 </head>
 <body>
   <a class="salto-contenido" href="#contenido-principal">Ir al contenido</a>
@@ -39,7 +32,7 @@
     <div class="portada">
       <p class="etiqueta-superior">ECOSISTEMA VIRTUAL ACCESIBLE</p>
       <h1>Mapa web</h1>
-      <p class="subtitulo">Vista organizada de la página principal, los módulos, subpáginas y accesos generales que conforman el ecosistema web del CREBE Ucayali.</p>
+      <p class="subtitulo">Vista organizada de la página principal, módulos, subpáginas y accesos generales que conforman el ecosistema web del CREBE Ucayali.</p>
     </div>
   </header>
 
@@ -48,138 +41,39 @@
       <div class="encabezado-seccion">
         <p class="seccion-etiqueta">Navegación general</p>
         <h2 id="titulo-mapa-web">Mapa web del Ecosistema Virtual Accesible</h2>
-        <p class="texto-principal">Esta página organiza los accesos principales del ecosistema para que docentes, familias, estudiantes, profesionales de apoyo y visitantes puedan ubicar rápidamente cada módulo, recurso o página transversal.</p>
+        <p class="texto-principal">Esta página organiza los accesos principales para ubicar rápidamente cada módulo, recurso o página transversal.</p>
       </div>
 
       <div class="grid-mapa">
-        <article class="bloque-mapa mapa-amplio">
-          <span class="etiqueta-estado">Nivel 1</span>
-          <h3>Página principal del ecosistema</h3>
-          <p>La página principal funciona como puerta de entrada general. Desde este punto se accede a los módulos y espacios complementarios del CREBE Ucayali.</p>
-          <ul class="lista-mapa">
-            <li><a href="https://crebeucayali.weebly.com/">Inicio principal CREBE Ucayali</a></li>
-          </ul>
-        </article>
+        <article class="bloque-mapa mapa-amplio"><span class="etiqueta-estado">Nivel 1</span><h3>Página principal del ecosistema</h3><p>Puerta de entrada general al ecosistema web CREBE Ucayali.</p><ul class="lista-mapa"><li><a href="https://crebeucayali.weebly.com/">Inicio principal CREBE Ucayali</a></li></ul></article>
 
-        <article class="bloque-mapa">
-          <span class="etiqueta-estado">AC</span>
-          <h3>Accesos Complementarios</h3>
-          <p>Reúne páginas generales de apoyo, orientación, contacto, directorios, legalidad, privacidad y navegación.</p>
-          <ul class="lista-mapa">
-            <li><a href="index.html">Inicio de Accesos Complementarios</a></li>
-            <li><a href="paginas/nosotros.html">Nosotros</a></li>
-            <li><a href="paginas/que-hacemos.html">Qué hacemos</a></li>
-            <li><a href="paginas/lineas-de-accion.html">Líneas de acción</a></li>
-            <li><a href="paginas/contacto.html">Contacto</a></li>
-            <li><a href="firma-tu-visita/">Firma tu visita</a></li>
-            <li><a href="directorios/directorio-institucional.html">Directorio institucional</a></li>
-            <li><a href="guia-de-uso.html">Guía de uso</a></li>
-            <li><a href="aviso-legal.html">Aviso legal</a></li>
-            <li><a href="politica-privacidad.html">Política de privacidad</a></li>
-            <li><a href="mapa-web.html">Mapa web</a></li>
-          </ul>
-        </article>
+        <article class="bloque-mapa"><span class="etiqueta-estado">AC</span><h3>Accesos Complementarios</h3><p>Reúne páginas generales de apoyo, orientación, contacto, directorios, legalidad, privacidad y navegación.</p><ul class="lista-mapa"><li><a href="index.html">Inicio de Accesos Complementarios</a></li><li><a href="paginas/nosotros.html">Nosotros</a></li><li><a href="paginas/que-hacemos.html">Qué hacemos</a></li><li><a href="paginas/lineas-de-accion.html">Líneas de acción</a></li><li><a href="paginas/contacto.html">Contacto</a></li><li><a href="firma-tu-visita/">Firma tu visita</a></li><li><a href="directorios/directorio-institucional.html">Directorio institucional</a></li><li><a href="paginas/guia-de-uso.html">Guía de uso</a></li><li><a href="paginas/aviso-legal.html">Aviso legal</a></li><li><a href="paginas/politica-privacidad.html">Política de privacidad</a></li><li><a href="mapa-web.html">Mapa web</a></li></ul></article>
 
-        <article class="bloque-mapa">
-          <span class="etiqueta-estado">RA</span>
-          <h3>Repositorio Accesible</h3>
-          <p>Organiza recursos, materiales, equipos y producciones accesibles disponibles para consulta y apoyo educativo.</p>
-          <ul class="lista-mapa">
-            <li><a href="https://gabriel-lsp.github.io/repositorio-accesible/">Inicio de Repositorio Accesible</a></li>
-          </ul>
-        </article>
+        <article class="bloque-mapa"><span class="etiqueta-estado">RA</span><h3>Repositorio Accesible</h3><p>Organiza recursos, materiales, equipos y producciones accesibles disponibles para consulta.</p><ul class="lista-mapa"><li><a href="https://gabriel-lsp.github.io/repositorio-accesible/">Inicio de Repositorio Accesible</a></li></ul></article>
+        <article class="bloque-mapa"><span class="etiqueta-estado">BDA</span><h3>Banco Digital Accesible</h3><p>Reúne recursos digitales accesibles, apoyos de comunicación y contenidos organizados por categorías.</p><ul class="lista-mapa"><li><a href="https://gabriel-lsp.github.io/banco-digital-accesible/">Inicio de Banco Digital Accesible</a></li><li><a href="https://gabriel-lsp.github.io/banco-digital-accesible/lsp/index.html">Lengua de Señas Peruana</a></li><li><a href="https://gabriel-lsp.github.io/banco-digital-accesible/braille/index.html">Sistema Braille</a></li></ul></article>
+        <article class="bloque-mapa"><span class="etiqueta-estado">MEA</span><h3>Materiales Educativos Accesibles</h3><p>Presenta materiales, generadores, apoyos visuales y herramientas de uso pedagógico.</p><ul class="lista-mapa"><li><a href="https://gabriel-lsp.github.io/materiales-educativos-accesibles/">Inicio de Materiales Educativos Accesibles</a></li></ul></article>
+        <article class="bloque-mapa"><span class="etiqueta-estado">JIA</span><h3>Juegos Interactivos Accesibles</h3><p>Organiza juegos educativos, actividades interactivas y recursos lúdicos.</p><ul class="lista-mapa"><li><a href="https://gabriel-lsp.github.io/juegos-interactivos-accesibles/">Inicio de Juegos Interactivos Accesibles</a></li></ul></article>
+        <article class="bloque-mapa"><span class="etiqueta-estado">CAP</span><h3>Capacitaciones CREBE</h3><p>Organiza capacitaciones, materiales formativos, cronogramas y evidencias.</p><ul class="lista-mapa"><li><a href="https://gabriel-lsp.github.io/capacitaciones-crebe-ucayali/">Inicio de Capacitaciones CREBE</a></li></ul></article>
+        <article class="bloque-mapa"><span class="etiqueta-estado">NI</span><h3>Noti Inclusivo</h3><p>Reúne noticias, comunicados y fuentes oficiales sobre inclusión, discapacidad y accesibilidad.</p><ul class="lista-mapa"><li><a href="https://gabriel-lsp.github.io/noti-inclusivos/">Inicio de Noti Inclusivo</a></li></ul></article>
 
-        <article class="bloque-mapa">
-          <span class="etiqueta-estado">BDA</span>
-          <h3>Banco Digital Accesible</h3>
-          <p>Reúne recursos digitales accesibles, apoyos de comunicación, consulta visual y contenidos organizados por categorías.</p>
-          <ul class="lista-mapa">
-            <li><a href="https://gabriel-lsp.github.io/banco-digital-accesible/">Inicio de Banco Digital Accesible</a></li>
-            <li><a href="https://gabriel-lsp.github.io/banco-digital-accesible/lsp/index.html">Lengua de Señas Peruana</a></li>
-            <li><a href="https://gabriel-lsp.github.io/banco-digital-accesible/braille/index.html">Sistema Braille</a></li>
-            <li><a href="https://gabriel-lsp.github.io/banco-digital-accesible/biblioteca/index.html">Biblioteca Accesible</a></li>
-          </ul>
-        </article>
-
-        <article class="bloque-mapa">
-          <span class="etiqueta-estado">MEA</span>
-          <h3>Materiales Educativos Accesibles</h3>
-          <p>Presenta materiales, generadores, apoyos visuales, recursos adaptados y herramientas de uso pedagógico.</p>
-          <ul class="lista-mapa">
-            <li><a href="https://gabriel-lsp.github.io/materiales-educativos-accesibles/">Inicio de Materiales Educativos Accesibles</a></li>
-            <li><a href="https://gabriel-lsp.github.io/materiales-educativos-accesibles/generador/generador.html">Generador Braille</a></li>
-            <li><a href="https://gabriel-lsp.github.io/materiales-educativos-accesibles/pictogramas/pictogramas.html">Pictogramas y apoyos visuales</a></li>
-            <li><a href="https://gabriel-lsp.github.io/materiales-educativos-accesibles/rutinas/rutinas.html">Generador de rutinas visuales</a></li>
-            <li><a href="https://gabriel-lsp.github.io/materiales-educativos-accesibles/conciencia-fonologica/conciencia-fonologica.html">Generador de sílabas</a></li>
-          </ul>
-        </article>
-
-        <article class="bloque-mapa">
-          <span class="etiqueta-estado">JIA</span>
-          <h3>Juegos Interactivos Accesibles</h3>
-          <p>Organiza juegos educativos, actividades interactivas, instrucciones y recursos lúdicos para reforzar aprendizajes.</p>
-          <ul class="lista-mapa">
-            <li><a href="https://gabriel-lsp.github.io/juegos-interactivos-accesibles/">Inicio de Juegos Interactivos Accesibles</a></li>
-            <li><a href="https://gabriel-lsp.github.io/juegos-interactivos-accesibles/juegos/adivina-la-sena/">Adivina la seña</a></li>
-            <li><a href="https://gabriel-lsp.github.io/juegos-interactivos-accesibles/juegos/emparejando/">Emparejando</a></li>
-            <li><a href="https://gabriel-lsp.github.io/juegos-interactivos-accesibles/juegos/cuenta-y-responde/">Cuenta y responde</a></li>
-          </ul>
-        </article>
-
-        <article class="bloque-mapa">
-          <span class="etiqueta-estado">CAP</span>
-          <h3>Capacitaciones CREBE</h3>
-          <p>Organiza capacitaciones, materiales formativos, sesiones, cronogramas, evidencias y recursos de orientación.</p>
-          <ul class="lista-mapa">
-            <li><a href="https://gabriel-lsp.github.io/capacitaciones-crebe-ucayali/">Inicio de Capacitaciones CREBE</a></li>
-            <li><a href="https://gabriel-lsp.github.io/capacitaciones-crebe-ucayali/#capacitaciones">Línea de tiempo de capacitaciones</a></li>
-          </ul>
-        </article>
-
-        <article class="bloque-mapa">
-          <span class="etiqueta-estado">NI</span>
-          <h3>Noti Inclusivo</h3>
-          <p>Reúne noticias, comunicados, fuentes oficiales y contenidos informativos sobre inclusión, discapacidad y accesibilidad.</p>
-          <ul class="lista-mapa">
-            <li><a href="https://gabriel-lsp.github.io/noti-inclusivos/">Inicio de Noti Inclusivo</a></li>
-            <li><a href="https://gabriel-lsp.github.io/noti-inclusivos/#titulo-busqueda">Buscador de noticias inclusivas</a></li>
-            <li><a href="https://gabriel-lsp.github.io/noti-inclusivos/#titulo-lista-noti">Noticias recientes</a></li>
-          </ul>
-        </article>
-
-        <article class="bloque-mapa mapa-amplio">
-          <span class="etiqueta-estado">Información legal</span>
-          <h3>Páginas transversales de transparencia</h3>
-          <p>Estas páginas fortalecen la formalidad del ecosistema y orientan el uso responsable de los contenidos, datos personales y recursos publicados.</p>
-          <ul class="lista-mapa">
-            <li><a href="aviso-legal.html">Aviso legal</a></li>
-            <li><a href="politica-privacidad.html">Política de privacidad</a></li>
-            <li><a href="mapa-web.html">Mapa web</a></li>
-          </ul>
-        </article>
+        <article class="bloque-mapa mapa-amplio"><span class="etiqueta-estado">Información legal</span><h3>Páginas transversales de transparencia</h3><p>Fortalecen la formalidad del ecosistema y orientan el uso responsable de contenidos, datos personales y recursos publicados.</p><ul class="lista-mapa"><li><a href="paginas/aviso-legal.html">Aviso legal</a></li><li><a href="paginas/politica-privacidad.html">Política de privacidad</a></li><li><a href="mapa-web.html">Mapa web</a></li></ul></article>
       </div>
 
-      <div class="nota-mapa" role="note" aria-label="Nota del mapa web">
-        El mapa web registra solo la estructura estable del ecosistema. No incluye cada noticia, material individual o recurso menor, para evitar que la página se vuelva extensa y difícil de mantener. Debe actualizarse cuando se agregue una nueva página, subpágina, módulo o recurso principal.
-      </div>
+      <div class="nota-mapa" role="note">El mapa web registra la estructura estable del ecosistema. Debe actualizarse cuando se agregue una nueva página, subpágina, módulo o recurso principal.</div>
 
       <div class="acciones-mapa">
-        <a class="boton-mapa" href="index.html">Volver a Accesos Complementarios</a>
-        <a class="boton-mapa secundario" href="paginas/contacto.html">Ir a Contacto</a>
-        <a class="boton-mapa secundario" href="https://crebeucayali.weebly.com/">Inicio principal</a>
+        <a class="boton-principal" href="index.html">Volver a Accesos Complementarios</a>
+        <a class="boton-principal secundario" href="paginas/contacto.html">Ir a Contacto</a>
+        <a class="boton-principal secundario" href="https://crebeucayali.weebly.com/">Inicio principal</a>
       </div>
-
       <p class="fecha-actualizacion">Última actualización: julio de 2026.</p>
     </section>
   </main>
 
   <footer>
     <div class="footer-contenido">
-      <div class="footer-bloque footer-identidad">
-        <img class="logo-footer" src="https://gabriel-lsp.github.io/banco-digital-accesible/logo-crebe.png" alt="Logo del CREBE Señor de los Milagros - Ucayali">
-        <div><h2>Accesos Complementarios</h2><p>Espacio de entrada a las páginas generales de CREBE Ucayali.</p></div>
-      </div>
-      <div class="footer-bloque"><h2>Enlaces</h2><p><a href="index.html">Accesos</a><br><a href="paginas/nosotros.html">Nosotros</a><br><a href="paginas/que-hacemos.html">Qué hacemos</a><br><a href="paginas/contacto.html">Contacto</a><br><a href="firma-tu-visita/">Firma tu visita</a><br><a href="aviso-legal.html">Aviso legal</a><br><a href="politica-privacidad.html">Política de privacidad</a><br><a href="mapa-web.html">Mapa web</a></p></div>
+      <div class="footer-bloque footer-identidad"><img class="logo-footer" src="https://gabriel-lsp.github.io/banco-digital-accesible/logo-crebe.png" alt="Logo del CREBE Señor de los Milagros - Ucayali"><div><h2>Accesos Complementarios</h2><p>Páginas generales de apoyo para la orientación y navegación del ecosistema.</p></div></div>
+      <div class="footer-bloque"><h2>Enlaces</h2><p><a href="index.html">Accesos</a><br><a href="paginas/nosotros.html">Nosotros</a><br><a href="paginas/contacto.html">Contacto</a><br><a href="paginas/guia-de-uso.html">Guía de uso</a><br><a href="paginas/aviso-legal.html">Aviso legal</a><br><a href="paginas/politica-privacidad.html">Política de privacidad</a></p></div>
       <div class="footer-bloque"><h2>Contacto CREBE</h2><p>CREBE "Señor de los Milagros" - Ucayali<br>Correo: senordelosmilagroscrebe@gmail.com<br>Horario: lunes a viernes, 8:00 a.m. - 12:00 p.m.</p></div>
     </div>
     <div class="footer-final"><p>© 2026 Gabriel Berrospi. Desarrollo original. Uso institucional autorizado al CREBE "Señor de los Milagros" - Ucayali.</p></div>
