@@ -1,0 +1,7 @@
+[build]
+  publish = "."
+
+[[redirects]]
+  from = "/accesibilidad/*"
+  to = "/contenido/accesibilidad/:splat"
+  status = 200
