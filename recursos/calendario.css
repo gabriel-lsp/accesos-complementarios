@@ -4,10 +4,13 @@
 .grid-meses{
   grid-template-columns:1fr;
   gap:22px;
+  min-width:0;
 }
 
 .grid-meses .mes{
   width:100%;
+  max-width:100%;
+  min-width:0;
 }
 
 .mes-cabecera h3{
@@ -72,8 +75,12 @@
 }
 
 @media (max-width:900px){
-  .mes-julio{
+  .grid-meses .mes{
     overflow-x:auto;
+    overflow-y:hidden;
+    -webkit-overflow-scrolling:touch;
+    overscroll-behavior-inline:contain;
+    scrollbar-gutter:stable;
   }
 
   .calendario-actividades{
@@ -88,7 +95,6 @@
 
   .mes{
     padding:16px;
-    overflow-x:auto;
   }
 
   .calendario-mes,
