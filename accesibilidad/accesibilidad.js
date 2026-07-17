@@ -81,6 +81,33 @@
     actualizarBotones(panel, preferencias);
   }
 
+  function corregirRutasAntiguas(){
+    const inicioPrincipal = 'https://crebe-ucayali.github.io/';
+    const contactoPrincipal = 'https://crebe-ucayali.github.io/accesos-complementarios/paginas/contacto.html';
+    const inicioAC = 'https://crebe-ucayali.github.io/accesos-complementarios/';
+
+    document.querySelectorAll('a[href]').forEach(enlace => {
+      const hrefOriginal = enlace.getAttribute('href');
+      if(!hrefOriginal) return;
+
+      const hrefNormalizado = hrefOriginal.trim();
+
+      if(hrefNormalizado.includes('crebe-ucayali.netlify.app')){
+        enlace.setAttribute('href', inicioPrincipal);
+        return;
+      }
+
+      if(hrefNormalizado === 'contacto.html' || hrefNormalizado.endsWith('/recursos/contacto.html') || hrefNormalizado.endsWith('/directorios/contacto.html') || hrefNormalizado.endsWith('/firma-tu-visita/contacto.html')){
+        enlace.setAttribute('href', contactoPrincipal);
+        return;
+      }
+
+      if(hrefNormalizado === 'index.html' && /\/(recursos|directorios|firma-tu-visita)\//.test(window.location.pathname)){
+        enlace.setAttribute('href', inicioAC);
+      }
+    });
+  }
+
   function crearPanel(){
     if(document.querySelector('.eva-accesibilidad-panel')) return;
 
@@ -146,13 +173,18 @@
     actualizarBotones(panel, limpiarPreferenciasObsoletas(obtenerPreferencias()));
   }
 
+  function iniciarHerramientasComunes(){
+    corregirRutasAntiguas();
+    crearPanel();
+  }
+
   const preferenciasIniciales = limpiarPreferenciasObsoletas(obtenerPreferencias());
   guardarPreferencias(preferenciasIniciales);
   aplicarPreferencias(preferenciasIniciales);
 
   if(document.readyState === 'loading'){
-    document.addEventListener('DOMContentLoaded', crearPanel);
+    document.addEventListener('DOMContentLoaded', iniciarHerramientasComunes);
   }else{
-    crearPanel();
+    iniciarHerramientasComunes();
   }
 })();
