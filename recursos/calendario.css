@@ -66,13 +66,18 @@
   display:block;
 }
 
+.calendario-actividades td.feriado .numero-dia,
+.calendario-actividades td.feriado .datos-actividad{
+  color:#b91c1c;
+}
+
 @media (max-width:900px){
   .mes-julio{
     overflow-x:auto;
   }
 
   .calendario-actividades{
-    min-width:980px;
+    min-width:700px;
   }
 }
 
@@ -92,6 +97,6 @@
   }
 
   .calendario-actividades{
-    min-width:980px;
+    min-width:700px;
   }
 }
