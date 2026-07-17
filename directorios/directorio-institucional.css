@@ -2,7 +2,7 @@
 
 /* Diseño específico del directorio institucional */
 .panel-contenido{
-  max-width:1180px!important;
+  max-width:1220px!important;
 }
 
 .grid-directorio{
@@ -15,26 +15,35 @@
 }
 
 .tarjeta-personal{
+  position:relative!important;
   display:grid!important;
-  grid-template-columns:70px minmax(230px,1.2fr) minmax(220px,1fr) minmax(250px,1.1fr)!important;
+  grid-template-columns:70px minmax(220px,1.2fr) minmax(200px,1fr) minmax(235px,1.1fr) 104px!important;
   align-items:center!important;
-  gap:22px!important;
+  gap:20px!important;
   width:100%!important;
-  min-height:108px!important;
+  min-height:116px!important;
   margin:0!important;
-  padding:20px 24px!important;
+  padding:18px 20px!important;
   background:#ffffff!important;
   border:1px solid #d9e2ec!important;
   border-left:7px solid #0f766e!important;
   border-radius:18px!important;
   box-shadow:0 8px 22px rgba(16,42,67,.09)!important;
   transition:transform .2s ease,box-shadow .2s ease,border-color .2s ease!important;
+  outline:none!important;
 }
 
-.tarjeta-personal:hover{
+.tarjeta-personal:hover,
+.tarjeta-personal:focus,
+.tarjeta-personal:focus-within{
   transform:translateY(-2px)!important;
   border-color:#9fcfc7!important;
   box-shadow:0 13px 30px rgba(16,42,67,.14)!important;
+}
+
+.tarjeta-personal:focus-visible{
+  outline:3px solid #f59e0b!important;
+  outline-offset:3px!important;
 }
 
 .numero-personal{
@@ -88,6 +97,50 @@
   text-underline-offset:3px!important;
 }
 
+.foto-profesional{
+  position:relative!important;
+  display:grid!important;
+  place-items:center!important;
+  width:88px!important;
+  height:88px!important;
+  margin:0!important;
+  overflow:hidden!important;
+  border:4px solid #ffffff!important;
+  border-radius:50%!important;
+  background:linear-gradient(135deg,#dff7f1,#cbd5e1)!important;
+  box-shadow:0 8px 20px rgba(16,42,67,.16)!important;
+  opacity:.18!important;
+  transform:scale(.82)!important;
+  transition:opacity .22s ease,transform .22s ease!important;
+}
+
+.foto-profesional img{
+  position:absolute!important;
+  inset:0!important;
+  z-index:2!important;
+  display:block!important;
+  width:100%!important;
+  height:100%!important;
+  object-fit:cover!important;
+  object-position:center!important;
+}
+
+.foto-iniciales{
+  position:relative!important;
+  z-index:1!important;
+  color:#0b3550!important;
+  font-size:1.15rem!important;
+  font-weight:900!important;
+  letter-spacing:.05em!important;
+}
+
+.tarjeta-personal:hover .foto-profesional,
+.tarjeta-personal:focus .foto-profesional,
+.tarjeta-personal:focus-within .foto-profesional{
+  opacity:1!important;
+  transform:scale(1)!important;
+}
+
 .nota-directorio{
   margin-top:28px!important;
   padding:18px 20px!important;
@@ -96,24 +149,29 @@
   border-radius:18px!important;
 }
 
-@media(max-width:960px){
+@media(max-width:1040px){
   .tarjeta-personal{
-    grid-template-columns:64px minmax(210px,1fr) minmax(210px,1fr)!important;
+    grid-template-columns:64px minmax(190px,1fr) minmax(180px,1fr) 92px!important;
   }
 
-  .tarjeta-personal p:last-child{
-    grid-column:2 / -1!important;
+  .tarjeta-personal p:last-of-type{
+    grid-column:2 / 4!important;
+  }
+
+  .foto-profesional{
+    grid-column:4!important;
+    grid-row:1 / span 2!important;
   }
 }
 
-@media(max-width:680px){
+@media(max-width:700px){
   .grid-directorio{
     gap:13px!important;
     margin-top:24px!important;
   }
 
   .tarjeta-personal{
-    grid-template-columns:56px minmax(0,1fr)!important;
+    grid-template-columns:56px minmax(0,1fr) 76px!important;
     align-items:start!important;
     gap:11px 15px!important;
     min-height:0!important;
@@ -131,8 +189,15 @@
 
   .tarjeta-personal h3,
   .tarjeta-personal p,
-  .tarjeta-personal p:last-child{
+  .tarjeta-personal p:last-of-type{
     grid-column:2!important;
+  }
+
+  .foto-profesional{
+    grid-column:3!important;
+    grid-row:1 / span 3!important;
+    width:68px!important;
+    height:68px!important;
   }
 
   .tarjeta-personal h3{
@@ -144,19 +209,26 @@
   }
 }
 
-@media(max-width:430px){
+@media(max-width:480px){
   .tarjeta-personal{
-    grid-template-columns:1fr!important;
-  }
-
-  .numero-personal,
-  .tarjeta-personal h3,
-  .tarjeta-personal p,
-  .tarjeta-personal p:last-child{
-    grid-column:1!important;
+    grid-template-columns:50px minmax(0,1fr)!important;
   }
 
   .numero-personal{
+    grid-row:1 / span 4!important;
+  }
+
+  .tarjeta-personal h3,
+  .tarjeta-personal p,
+  .tarjeta-personal p:last-of-type,
+  .foto-profesional{
+    grid-column:2!important;
+  }
+
+  .foto-profesional{
     grid-row:auto!important;
+    width:82px!important;
+    height:82px!important;
+    margin-top:4px!important;
   }
 }
