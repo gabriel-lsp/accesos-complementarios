@@ -1,0 +1,15 @@
+/* Ajuste visual del patrón Shipibo-Konibo en la cabecera de Accesos Complementarios. */
+.patron-portada{
+  background-image:url("patron-shipibo.webp?v=3") !important;
+  background-repeat:repeat !important;
+  background-size:320px auto !important;
+  background-position:top left !important;
+  opacity:.30 !important;
+  filter:saturate(1.15) contrast(1.08) !important;
+}
+
+@media (max-width:700px){
+  .patron-portada{
+    background-size:260px auto !important;
+  }
+}
