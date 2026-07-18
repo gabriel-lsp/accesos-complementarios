@@ -29,12 +29,14 @@
 .bloque-institucional .nombre-institucional{color:#fff;font-size:1.02rem;line-height:1.2}
 .bloque-institucional .detalle-institucional{margin-top:4px;color:rgba(255,255,255,.94);font-size:.88rem;font-weight:750;line-height:1.25}
 
-/* Fotografías: mayo 08, 18 y 20; junio 05 y 30; julio 08, 09 y 10 */
+/* Fotografías: mayo 08, 18 y 20; junio 05 y 30; julio 02, 07, 08, 09 y 10 */
 .grid-meses>.mes:nth-child(2) tbody tr:nth-child(2) td:nth-child(5),
 .grid-meses>.mes:nth-child(2) tbody tr:nth-child(4) td:nth-child(1),
 .grid-meses>.mes:nth-child(2) tbody tr:nth-child(4) td:nth-child(3),
 .grid-meses>.mes:nth-child(3) tbody tr:nth-child(1) td:nth-child(5),
 .grid-meses>.mes:nth-child(3) tbody tr:nth-child(5) td:nth-child(2),
+.grid-meses>.mes:nth-child(4) tbody tr:nth-child(1) td:nth-child(4),
+.grid-meses>.mes:nth-child(4) tbody tr:nth-child(2) td:nth-child(2),
 .grid-meses>.mes:nth-child(4) tbody tr:nth-child(2) td:nth-child(3),
 .grid-meses>.mes:nth-child(4) tbody tr:nth-child(2) td:nth-child(4),
 .grid-meses>.mes:nth-child(4) tbody tr:nth-child(2) td:nth-child(5){cursor:zoom-in}
@@ -44,6 +46,8 @@
 .grid-meses>.mes:nth-child(2) tbody tr:nth-child(4) td:nth-child(3)::after,
 .grid-meses>.mes:nth-child(3) tbody tr:nth-child(1) td:nth-child(5)::after,
 .grid-meses>.mes:nth-child(3) tbody tr:nth-child(5) td:nth-child(2)::after,
+.grid-meses>.mes:nth-child(4) tbody tr:nth-child(1) td:nth-child(4)::after,
+.grid-meses>.mes:nth-child(4) tbody tr:nth-child(2) td:nth-child(2)::after,
 .grid-meses>.mes:nth-child(4) tbody tr:nth-child(2) td:nth-child(3)::after,
 .grid-meses>.mes:nth-child(4) tbody tr:nth-child(2) td:nth-child(4)::after,
 .grid-meses>.mes:nth-child(4) tbody tr:nth-child(2) td:nth-child(5)::after{position:absolute;inset:4px;z-index:5;border-radius:12px;background-position:center;background-repeat:no-repeat;background-size:cover;box-shadow:0 10px 24px rgba(16,42,67,.24);content:"";opacity:0;pointer-events:none;transform:scale(.96);transition:opacity .18s ease,transform .18s ease}
@@ -53,6 +57,8 @@
 .grid-meses>.mes:nth-child(2) tbody tr:nth-child(4) td:nth-child(3)::after{background-image:url("imagenes-calendario/20-05.webp")}
 .grid-meses>.mes:nth-child(3) tbody tr:nth-child(1) td:nth-child(5)::after{background-image:url("imagenes-calendario/05-06.webp")}
 .grid-meses>.mes:nth-child(3) tbody tr:nth-child(5) td:nth-child(2)::after{background-image:url("imagenes-calendario/30-06.webp")}
+.grid-meses>.mes:nth-child(4) tbody tr:nth-child(1) td:nth-child(4)::after{background-image:url("imagenes-calendario/02-07.webp")}
+.grid-meses>.mes:nth-child(4) tbody tr:nth-child(2) td:nth-child(2)::after{background-image:url("imagenes-calendario/07-07.webp")}
 .grid-meses>.mes:nth-child(4) tbody tr:nth-child(2) td:nth-child(3)::after{background-image:url("imagenes-calendario/08-07.webp")}
 .grid-meses>.mes:nth-child(4) tbody tr:nth-child(2) td:nth-child(4)::after{background-image:url("imagenes-calendario/09-07.webp")}
 .grid-meses>.mes:nth-child(4) tbody tr:nth-child(2) td:nth-child(5)::after{background-image:url("imagenes-calendario/10-07.webp")}
@@ -62,6 +68,8 @@
 .grid-meses>.mes:nth-child(2) tbody tr:nth-child(4) td:nth-child(3):hover::after,
 .grid-meses>.mes:nth-child(3) tbody tr:nth-child(1) td:nth-child(5):hover::after,
 .grid-meses>.mes:nth-child(3) tbody tr:nth-child(5) td:nth-child(2):hover::after,
+.grid-meses>.mes:nth-child(4) tbody tr:nth-child(1) td:nth-child(4):hover::after,
+.grid-meses>.mes:nth-child(4) tbody tr:nth-child(2) td:nth-child(2):hover::after,
 .grid-meses>.mes:nth-child(4) tbody tr:nth-child(2) td:nth-child(3):hover::after,
 .grid-meses>.mes:nth-child(4) tbody tr:nth-child(2) td:nth-child(4):hover::after,
 .grid-meses>.mes:nth-child(4) tbody tr:nth-child(2) td:nth-child(5):hover::after,
@@ -70,6 +78,8 @@
 .grid-meses>.mes:nth-child(2) tbody tr:nth-child(4) td:nth-child(3):active::after,
 .grid-meses>.mes:nth-child(3) tbody tr:nth-child(1) td:nth-child(5):active::after,
 .grid-meses>.mes:nth-child(3) tbody tr:nth-child(5) td:nth-child(2):active::after,
+.grid-meses>.mes:nth-child(4) tbody tr:nth-child(1) td:nth-child(4):active::after,
+.grid-meses>.mes:nth-child(4) tbody tr:nth-child(2) td:nth-child(2):active::after,
 .grid-meses>.mes:nth-child(4) tbody tr:nth-child(2) td:nth-child(3):active::after,
 .grid-meses>.mes:nth-child(4) tbody tr:nth-child(2) td:nth-child(4):active::after,
 .grid-meses>.mes:nth-child(4) tbody tr:nth-child(2) td:nth-child(5):active::after{opacity:1;transform:scale(1)}
