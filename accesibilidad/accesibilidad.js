@@ -4,6 +4,7 @@
 (function(){
   const STORAGE_KEY = 'eva_accesibilidad_preferencias';
   const CLASES = ['eva-alto-contraste','eva-texto-grande','eva-texto-muy-grande','eva-espaciado-amplio','eva-reducir-movimiento'];
+  const FAVICON_BASE = 'https://crebe-ucayali.github.io/accesos-complementarios/assets/favicon/';
 
   const opciones = [
     {
@@ -24,6 +25,34 @@
       excluye:['eva-texto-grande']
     }
   ];
+
+  function implementarFaviconInstitucional(){
+    const recursos = [
+      { rel:'icon', href:FAVICON_BASE + 'favicon-crebe.ico', sizes:'any' },
+      { rel:'icon', href:FAVICON_BASE + 'favicon-32x32.png', type:'image/png', sizes:'32x32' },
+      { rel:'icon', href:FAVICON_BASE + 'favicon-16x16.png', type:'image/png', sizes:'16x16' },
+      { rel:'apple-touch-icon', href:FAVICON_BASE + 'apple-touch-icon.png', sizes:'180x180' }
+    ];
+
+    recursos.forEach(recurso => {
+      const selector = `link[rel="${recurso.rel}"][href="${recurso.href}"]`;
+      if(document.head.querySelector(selector)) return;
+
+      const enlace = document.createElement('link');
+      enlace.rel = recurso.rel;
+      enlace.href = recurso.href;
+      if(recurso.type) enlace.type = recurso.type;
+      if(recurso.sizes) enlace.sizes = recurso.sizes;
+      document.head.appendChild(enlace);
+    });
+
+    if(!document.head.querySelector('meta[name="theme-color"]')){
+      const colorTema = document.createElement('meta');
+      colorTema.name = 'theme-color';
+      colorTema.content = '#0b3550';
+      document.head.appendChild(colorTema);
+    }
+  }
 
   function obtenerPreferencias(){
     try{
@@ -174,6 +203,7 @@
   }
 
   function iniciarHerramientasComunes(){
+    implementarFaviconInstitucional();
     corregirRutasAntiguas();
     crearPanel();
   }
